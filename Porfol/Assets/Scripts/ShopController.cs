@@ -4,15 +4,23 @@ using UnityEngine;
 
 public class ShopController : MonoBehaviour
 {
-    // Start is called before the first frame update
-    void Start()
+    // ** 빌드 매니저 인스턴스 참조
+    BuildManager buildManager;
+
+    private void Start()
     {
-        
+        buildManager = BuildManager.instance;
     }
 
-    // Update is called once per frame
-    void Update()
+    // ** 기본 터렛 구입
+    public void PurchaseStandardTurret ()
     {
-        
+        // ** 기본 터렛을 빌드할 터렛으로 세팅
+        buildManager.SetTurretToBuild(buildManager.standardTurretPrefab);
+    }
+
+    public void PurchaseMissileLauncher()
+    {
+        buildManager.SetTurretToBuild(buildManager.MissileLauncherPrefab);
     }
 }
