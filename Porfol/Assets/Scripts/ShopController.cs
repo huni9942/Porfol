@@ -4,6 +4,9 @@ using UnityEngine;
 
 public class ShopController : MonoBehaviour
 {
+    public TurretBlueprint standardTurret;
+    public TurretBlueprint missileLauncher;
+
     // ** 빌드 매니저 인스턴스 참조
     BuildManager buildManager;
 
@@ -13,16 +16,16 @@ public class ShopController : MonoBehaviour
     }
 
     // ** 기본 터렛 구입
-    public void PurchaseStandardTurret ()
+    public void SelectStandardTurret ()
     {
         // ** 기본 터렛을 빌드할 터렛으로 세팅
-        buildManager.SetTurretToBuild(buildManager.standardTurretPrefab);
+        buildManager.SelectTurretToBuild(standardTurret);
     }
 
     // ** 미사일 터렛 구입
-    public void PurchaseMissileLauncher()
+    public void SelectMissileLauncher()
     {
         // ** 미사일 터렛을 빌드할 터렛으로 세팅
-        buildManager.SetTurretToBuild(buildManager.MissileLauncherPrefab);
+        buildManager.SelectTurretToBuild(missileLauncher);
     }
 }

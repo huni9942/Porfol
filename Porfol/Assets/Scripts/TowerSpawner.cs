@@ -9,8 +9,10 @@ public class TowerSpawner : MonoBehaviour
     public Color hoverColor;
     // ** 터렛의 위치 조정
     public Vector3 positionOffset;
+
+    [Header("Optional")]
     // ** 건설할 터렛
-    private GameObject turret;
+    public GameObject turret;
     // ** 렌더러
     private Renderer rend;
     // ** 초기 색상
@@ -27,6 +29,12 @@ public class TowerSpawner : MonoBehaviour
         buildManager = BuildManager.instance;
     }
 
+    // ** 타워를 빌드할 위치
+    public Vector3 GetBuildPosition()
+    {
+        return transform.position + positionOffset;
+    }
+
     // ** 타워 스포너 클릭 시
     private void OnMouseDown()
     {
@@ -35,7 +43,7 @@ public class TowerSpawner : MonoBehaviour
             return;
 
         // ** 빌드할 터렛이 존재하지 않을 때 반환
-        if (buildManager.GetTurretToBuild() == null)
+        if (!buildManager.CanBuild)
             return;
 
         // ** 터렛 존재 시 반환
@@ -43,10 +51,8 @@ public class TowerSpawner : MonoBehaviour
         {
             return;
         }
-        // ** 빌드할 터렛의 종류 받아오기
-        GameObject turretToBuild = buildManager.GetTurretToBuild();
-        // ** 빌드할 터렛을 복사하여 소환
-        turret = (GameObject)Instantiate(turretToBuild, transform.position + positionOffset, transform.rotation);
+
+        buildManager.BuildTurretOn(this);
     }
 
     // ** 마우스를 감지했을 때 색상 변경
@@ -57,7 +63,7 @@ public class TowerSpawner : MonoBehaviour
             return;
 
         // ** 빌드할 터렛이 존재하지 않을 때 반환
-        if (buildManager.GetTurretToBuild() == null)
+        if (!buildManager.CanBuild)
             return;
         rend.material.color = hoverColor;
     }
