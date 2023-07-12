@@ -9,6 +9,8 @@ public class BulletController : MonoBehaviour
 
     // ** 총알의 속도
     public float speed = 70.0f;
+    // ** 총알의 폭발 반경
+    public float explosionRadius = 0.0f;
     // ** 충돌 이펙트
     public GameObject impactEffect;
     public void Seek(Transform _target)
@@ -42,17 +44,57 @@ public class BulletController : MonoBehaviour
         // ** 총알이 월드 좌표 내에서 (정규화된 방향 벡터 * 현재 프레임에서 총알이 지나온 거리)를 향해 이동
         // ** target에 얼마나 가까이 있든, 속도가 변하게 하지 않기 위함
         transform.Translate(dir.normalized * distanceThisFrame, Space.World);
+        // ** 총알이 target을 바라보도록
+        transform.LookAt(target);
     }
 
     // ** 충돌 시
     void HitTarget()
     {
-        // ** 충돌 효과 복사
+        // ** 충돌 효과 복사 생성 후 삭제
         GameObject effectIns = (GameObject)Instantiate(impactEffect, transform.position, transform.rotation);
-        Destroy(effectIns, 2.0f);
+        Destroy(effectIns, 5.0f);
 
-        Destroy(target.gameObject);
-        // ** 총알 파괴
+        // ** 폭발 반경이 0보다 클 때
+        if (explosionRadius > 0.0f)
+        {
+            Explode();
+        }
+        else
+        {
+            Damage(target);
+        }
+        // ** 총알 삭제
         Destroy(gameObject);
+    }
+    
+    // ** 폭발
+    void Explode()
+    {
+        // ** 폭발 시 폭발 반경 내 존재하는 모든 콜리더들의 배열
+        Collider[] colliders = Physics.OverlapSphere(transform.position, explosionRadius);
+        // ** 폭발 반경 범위 안에 존재하는 콜리더에게
+        foreach (Collider collider in colliders)
+        {
+            // ** 콜리더의 태그가 Enemy일 때
+            if(collider.tag == "Enemy")
+            {
+                // ** 콜리더에 대미지
+                Damage(collider.transform);
+            }
+        }
+    }
+
+    // ** 대미지 공식
+    void Damage (Transform enemy)
+    {
+        // ** 타겟 파괴
+        Destroy(enemy.gameObject);
+    }
+
+    private void OnDrawGizmosSelected()
+    {
+        Gizmos.color = Color.red;
+        Gizmos.DrawWireSphere(transform.position, explosionRadius);
     }
 }

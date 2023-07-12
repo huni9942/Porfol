@@ -19,8 +19,10 @@ public class ShopController : MonoBehaviour
         buildManager.SetTurretToBuild(buildManager.standardTurretPrefab);
     }
 
+    // ** 미사일 터렛 구입
     public void PurchaseMissileLauncher()
     {
+        // ** 미사일 터렛을 빌드할 터렛으로 세팅
         buildManager.SetTurretToBuild(buildManager.MissileLauncherPrefab);
     }
 }
