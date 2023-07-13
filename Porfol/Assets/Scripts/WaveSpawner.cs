@@ -33,8 +33,10 @@ public class WaveSpawner : MonoBehaviour
         // ** countdown은 실제 시간만큼 감소
         countdown -= Time.deltaTime;
 
-        // ** countdown을 반올림한 뒤, 문자열로 변환하여 텍스트로 표시
-        waveCountdownText.text = Mathf.Round(countdown).ToString();
+        countdown = Mathf.Clamp(countdown, 0.0f, Mathf.Infinity);
+
+        // ** countdown을 문자열로 변환하여 텍스트로 표시
+        waveCountdownText.text = string.Format("{0:00.00}", countdown);
     }
 
     // ** Wave 생성 함수

@@ -7,6 +7,15 @@ public class EnemyController : MonoBehaviour
     // ** Enemy의 속도
     public float speed = 10.0f;
 
+    // ** Enemy의 체력
+    public int health = 100;
+
+    // ** Enemy의 보상
+    public int reward = 50;
+
+    // ** 사망 시 이펙트
+    public GameObject deathEffect;
+
     // ** target의 트랜스폼
     private Transform target;
     // ** waypoint의 index를 가리킬 변수 wavepointIndex
@@ -16,6 +25,33 @@ public class EnemyController : MonoBehaviour
     {
         // ** 첫 번째 Waypoint를 target으로 지정
         target = Waypoints.points[0];
+    }
+
+    // ** Enemy가 입는 피해
+    public void TakeDamage(int amount)
+    {
+        // ** 피해량만큼 체력 소모
+        health -= amount;
+
+        // ** 체력이 0이하일 때 사망
+        if (health <= 0)
+        {
+            Die();
+        }
+    }
+
+    // ** Enemy 사망 시
+    void Die()
+    {
+        // ** 플레이어의 돈이 보상만큼 증가
+        PlayerStats.Money += reward;
+
+        // ** 사망 시 이펙트 복사 생성
+        GameObject effect = (GameObject)Instantiate(deathEffect, transform.position, Quaternion.identity);
+        // ** 이펙트 소멸
+        Destroy(effect, 2.0f);
+        // ** Enemy 파괴
+        Destroy(gameObject);
     }
 
     private void Update()
@@ -38,7 +74,7 @@ public class EnemyController : MonoBehaviour
         // ** 최종 Waypoint에 도달했을 때, Enemy를 파괴
         if (wavepointIndex >= Waypoints.points.Length - 1)
         {
-            Destroy(gameObject);
+            EndPath();
             return;
         }
 
@@ -46,5 +82,14 @@ public class EnemyController : MonoBehaviour
         wavepointIndex++;
         // ** 다음 Waypoint를 target으로 지정
         target = Waypoints.points[wavepointIndex];
+    }
+
+    // ** Enemy가 최종 Waypoint에 도달했을 때
+    void EndPath()
+    {
+        // ** 플레이어의 생명력 소모
+        PlayerStats.Lives--;
+        // ** Enemy 파괴
+        Destroy(gameObject);
     }
 }

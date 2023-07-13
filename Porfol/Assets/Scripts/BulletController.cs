@@ -9,6 +9,8 @@ public class BulletController : MonoBehaviour
 
     // ** 총알의 속도
     public float speed = 70.0f;
+    // ** 총알의 대미지
+    public int damage = 50;
     // ** 총알의 폭발 반경
     public float explosionRadius = 0.0f;
     // ** 충돌 이펙트
@@ -88,8 +90,14 @@ public class BulletController : MonoBehaviour
     // ** 대미지 공식
     void Damage (Transform enemy)
     {
-        // ** 타겟 파괴
-        Destroy(enemy.gameObject);
+        // ** Enemy가 가진 컴포넌트 EnemyController를 가져올 값
+        EnemyController e = enemy.GetComponent<EnemyController>();
+        // ** Enemy가 EnemyController를 가지고 있다면
+        if(e!=null)
+        {
+            // ** Enemy는 대미지를 입는다
+            e.TakeDamage(damage);
+        }
     }
 
     private void OnDrawGizmosSelected()

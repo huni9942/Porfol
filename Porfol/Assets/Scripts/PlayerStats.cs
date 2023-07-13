@@ -8,9 +8,14 @@ public class PlayerStats : MonoBehaviour
     public static int Money;
     // ** 시작 시 지급할 돈
     public int startMoney = 400;
+    // ** 플레이어의 현재 생명력
+    public static int Lives;
+    // ** 시작 시 플레이어의 생명력
+    public int startLives = 20;
 
     private void Start()
     {
         Money = startMoney;
+        Lives = startLives;
     }
 }

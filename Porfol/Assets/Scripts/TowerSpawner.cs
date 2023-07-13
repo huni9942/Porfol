@@ -7,6 +7,8 @@ public class TowerSpawner : MonoBehaviour
 {
     // ** 마우스를 감지했을 때 색상
     public Color hoverColor;
+    // ** 돈이 부족할 때 색상
+    public Color notEnoughMoneyColor;
     // ** 터렛의 위치 조정
     public Vector3 positionOffset;
 
@@ -65,7 +67,19 @@ public class TowerSpawner : MonoBehaviour
         // ** 빌드할 터렛이 존재하지 않을 때 반환
         if (!buildManager.CanBuild)
             return;
+        // ** TowerSpawner의 컬러 변경
         rend.material.color = hoverColor;
+
+        // ** 돈이 충분할 경우
+        if(buildManager.HasMoney)
+        {
+            rend.material.color = hoverColor;
+        }
+        // ** 돈이 부족할 경우
+        else
+        {
+            rend.material.color = notEnoughMoneyColor;
+        }
     }
 
     // ** 마우스가 벗어났을 때 색상 변경

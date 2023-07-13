@@ -17,14 +17,18 @@ public class BuildManager : MonoBehaviour
 
     // ** ±‚∫ª ≈Õ∑ø «¡∏Æ∆È
     public GameObject standardTurretPrefab;
-
+    // ** πÃªÁ¿œ ≈Õ∑ø «¡∏Æ∆È
     public GameObject MissileLauncherPrefab;
+    // ** ≈Õ∑ø ∫ÙµÂ Ω√ ¿Ã∆Â∆Æ
+    public GameObject buildEffect;
 
     // ** ∫ÙµÂ«“ ≈Õ∑ø
     private TurretBlueprint turretToBuild;
 
     // ** ∫ÙµÂ«“ ≈Õ∑ø¿Ã null¿Ã æ∆¥“ ∂ß ¬¸¿Œ ∞™
     public bool CanBuild { get { return turretToBuild != null; } }
+    // ** «√∑π¿ÃæÓ¿« µ∑¿Ã ≈∏øˆ¿« ∫ÒøÎ∫∏¥Ÿ ∏π¿ª ∂ß ¬¸¿Œ ∞™
+    public bool HasMoney { get { return PlayerStats.Money >= turretToBuild.cost; } }
 
     // ** ≈Õ∑ø ∫ÙµÂ
     public void BuildTurretOn (TowerSpawner towerSpawner)
@@ -40,6 +44,11 @@ public class BuildManager : MonoBehaviour
         GameObject turret = (GameObject)Instantiate(turretToBuild.prefab, towerSpawner.GetBuildPosition(), Quaternion.identity);
         // ** ∫πªÁ«— ≈Õ∑ø¿ª ∫ÙµÂ
         towerSpawner.turret = turret;
+
+        // ** ∫ÙµÂ Ω√ ¿Ã∆Â∆Æ ∫πªÁ ª˝º∫
+        GameObject effect = (GameObject)Instantiate(buildEffect, towerSpawner.GetBuildPosition(), Quaternion.identity);
+        // ** ¿Ã∆Â∆Æ º“∏Í
+        Destroy(effect, 5.0f);
     }
 
     // ** ∫ÙµÂ«“ ≈Õ∑ø ºº∆√
