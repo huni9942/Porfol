@@ -11,7 +11,7 @@ public class Waypoints : MonoBehaviour
     {
         // ** points는 Waypoints의 자식 갯수 길이 만큼의 배열
         points = new Transform[transform.childCount];
-        // ** Waypoints의 i번째 자식을 색인하여 i번째 배열 요소로 저장, 자식 갯수만큼 반복
+        // ** Waypoints의 i번째 자식을 색인하여 i번째 배열 요소로 저장, 자식 갯수만큼 반복한다
         for (int i = 0; i < points.Length; i++)
         {
             points[i] = transform.GetChild(i);

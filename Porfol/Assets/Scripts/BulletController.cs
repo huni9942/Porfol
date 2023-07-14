@@ -15,6 +15,8 @@ public class BulletController : MonoBehaviour
     public float explosionRadius = 0.0f;
     // ** 충돌 이펙트
     public GameObject impactEffect;
+    
+    // ** 타겟 탐색
     public void Seek(Transform _target)
     {
         target = _target;
@@ -25,7 +27,7 @@ public class BulletController : MonoBehaviour
         // ** target이 존재하지 않을 경우
         if(target == null)
         {
-            // ** 총알 파괴
+            // ** 총알을 파괴한다
             Destroy(gameObject);
             return;
         }
@@ -38,7 +40,7 @@ public class BulletController : MonoBehaviour
         // ** 현재 프레임에서 총알이 지나온 거리가 발사될 때의 총알과 target 사이의 거리와 같거나 길 경우
         if (dir.magnitude <= distanceThisFrame)
         {
-            // ** 총알이 target에 충돌
+            // ** 총알이 target에 충돌한다
             HitTarget();
             return;
         }
@@ -53,7 +55,7 @@ public class BulletController : MonoBehaviour
     // ** 충돌 시
     void HitTarget()
     {
-        // ** 충돌 효과 복사 생성 후 삭제
+        // ** 충돌 효과 복사 생성 후 삭제한다
         GameObject effectIns = (GameObject)Instantiate(impactEffect, transform.position, transform.rotation);
         Destroy(effectIns, 5.0f);
 
@@ -66,7 +68,7 @@ public class BulletController : MonoBehaviour
         {
             Damage(target);
         }
-        // ** 총알 삭제
+        // ** 총알을 삭제한다
         Destroy(gameObject);
     }
     
@@ -81,7 +83,7 @@ public class BulletController : MonoBehaviour
             // ** 콜리더의 태그가 Enemy일 때
             if(collider.tag == "Enemy")
             {
-                // ** 콜리더에 대미지
+                // ** 콜리더에 대미지를 가한다
                 Damage(collider.transform);
             }
         }

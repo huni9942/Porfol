@@ -33,25 +33,25 @@ public class BuildManager : MonoBehaviour
     // ** 터렛 빌드
     public void BuildTurretOn (TowerSpawner towerSpawner)
     {
-        // ** 보유한 돈이 터렛 가격보다 적을 경우 반환
+        // ** 보유한 돈이 터렛 가격보다 적을 경우 반환한다
         if (PlayerStats.Money < turretToBuild.cost)
             return;
 
-        // ** 보유한 돈에서 터렛 가격만큼 차감
+        // ** 보유한 돈에서 터렛 가격만큼 차감한다
         PlayerStats.Money -= turretToBuild.cost;
 
-        // ** 빌드할 터렛을 복사
+        // ** 빌드할 터렛을 복사한다
         GameObject turret = (GameObject)Instantiate(turretToBuild.prefab, towerSpawner.GetBuildPosition(), Quaternion.identity);
-        // ** 복사한 터렛을 빌드
+        // ** 복사한 터렛을 빌드한다
         towerSpawner.turret = turret;
 
-        // ** 빌드 시 이펙트 복사 생성
+        // ** 빌드 시 이펙트를 복사 생성한다
         GameObject effect = (GameObject)Instantiate(buildEffect, towerSpawner.GetBuildPosition(), Quaternion.identity);
-        // ** 이펙트 소멸
+        // ** 이펙트를 소멸시킨다
         Destroy(effect, 5.0f);
     }
 
-    // ** 빌드할 터렛 세팅
+    // ** 빌드할 터렛을 세팅한다
     public void SelectTurretToBuild( TurretBlueprint turret)
     {
         turretToBuild = turret;

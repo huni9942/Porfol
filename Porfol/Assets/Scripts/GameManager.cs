@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class GameManager : MonoBehaviour
 {
-    // ** 게임 종료 값
+    // ** 게임 종료 On/Off
     private bool gameEnded = false;
 
     void Update()
@@ -23,7 +23,7 @@ public class GameManager : MonoBehaviour
     // ** 게임 종료 함수
     void EndGame()
     {
-        // ** 게임 종료 값이 참
+        // ** 게임 종료 On
         gameEnded = true;
     }
 }

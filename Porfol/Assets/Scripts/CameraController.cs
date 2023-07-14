@@ -23,10 +23,10 @@ public class CameraController : MonoBehaviour
     {
         // ** ESC 버튼 입력 시
         if (Input.GetKeyDown(KeyCode.Escape))
-            // ** 카메라 고정
+            // ** 카메라를 고정한다
             doMovement = !doMovement;
 
-        // ** 카메라 고정 시 여기서 반환
+        // ** 카메라 고정 시 여기서 반환한다
         if (!doMovement)
             return;
 
@@ -54,12 +54,12 @@ public class CameraController : MonoBehaviour
         // ** 카메라의 위치
         Vector3 pos = transform.position;
 
-        // ** 카메라의 y축을 휠 스크롤에 따라 변경
+        // ** 카메라의 y축을 휠 스크롤에 따라 변경한다
         pos.y -= scroll * 1000 * scrollSpeed * Time.deltaTime;
-        // ** 카메라의 y축 최소최대 높이 제한
+        // ** 카메라의 y축 최소최대 높이를 제한한다
         pos.y = Mathf.Clamp(pos.y, minY, maxY);
 
-        // ** 카메라의 위치 설정
+        // ** 카메라의 위치를 설정한다
         transform.position = pos;
     }
 }

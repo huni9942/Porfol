@@ -178,6 +178,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: TowerSpawner (20)
       objectReference: {fileID: 0}
+    - target: {fileID: 5961186678239745866, guid: 129b751e22f0aee40b372a1e7aeff0fc, type: 3}
+      propertyPath: m_Layer
+      value: 8
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 129b751e22f0aee40b372a1e7aeff0fc, type: 3}
 --- !u!4 &40989725 stripped
@@ -271,6 +275,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: TowerSpawner (14)
       objectReference: {fileID: 0}
+    - target: {fileID: 5961186678239745866, guid: 129b751e22f0aee40b372a1e7aeff0fc, type: 3}
+      propertyPath: m_Layer
+      value: 8
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 129b751e22f0aee40b372a1e7aeff0fc, type: 3}
 --- !u!4 &104716366 stripped
@@ -290,7 +298,7 @@ GameObject:
   - component: {fileID: 137224869}
   - component: {fileID: 137224868}
   - component: {fileID: 137224867}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: 6
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -461,6 +469,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: TowerSpawner (24)
       objectReference: {fileID: 0}
+    - target: {fileID: 5961186678239745866, guid: 129b751e22f0aee40b372a1e7aeff0fc, type: 3}
+      propertyPath: m_Layer
+      value: 8
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 129b751e22f0aee40b372a1e7aeff0fc, type: 3}
 --- !u!4 &144890807 stripped
@@ -523,6 +535,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: TowerSpawner (8)
       objectReference: {fileID: 0}
+    - target: {fileID: 5961186678239745866, guid: 129b751e22f0aee40b372a1e7aeff0fc, type: 3}
+      propertyPath: m_Layer
+      value: 8
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 129b751e22f0aee40b372a1e7aeff0fc, type: 3}
 --- !u!4 &151248907 stripped
@@ -584,6 +600,10 @@ PrefabInstance:
     - target: {fileID: 5961186678239745866, guid: 129b751e22f0aee40b372a1e7aeff0fc, type: 3}
       propertyPath: m_Name
       value: TowerSpawner (11)
+      objectReference: {fileID: 0}
+    - target: {fileID: 5961186678239745866, guid: 129b751e22f0aee40b372a1e7aeff0fc, type: 3}
+      propertyPath: m_Layer
+      value: 8
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 129b751e22f0aee40b372a1e7aeff0fc, type: 3}
@@ -751,6 +771,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: TowerSpawner (12)
       objectReference: {fileID: 0}
+    - target: {fileID: 5961186678239745866, guid: 129b751e22f0aee40b372a1e7aeff0fc, type: 3}
+      propertyPath: m_Layer
+      value: 8
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 129b751e22f0aee40b372a1e7aeff0fc, type: 3}
 --- !u!4 &269179709 stripped
@@ -884,7 +908,7 @@ GameObject:
   - component: {fileID: 466090523}
   - component: {fileID: 466090522}
   - component: {fileID: 466090521}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: 3
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1023,6 +1047,10 @@ PrefabInstance:
     - target: {fileID: 5961186678239745866, guid: 129b751e22f0aee40b372a1e7aeff0fc, type: 3}
       propertyPath: m_Name
       value: TowerSpawner (21)
+      objectReference: {fileID: 0}
+    - target: {fileID: 5961186678239745866, guid: 129b751e22f0aee40b372a1e7aeff0fc, type: 3}
+      propertyPath: m_Layer
+      value: 8
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 129b751e22f0aee40b372a1e7aeff0fc, type: 3}
@@ -1201,7 +1229,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 660508627}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Way
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1244,7 +1272,7 @@ GameObject:
   - component: {fileID: 699918261}
   - component: {fileID: 699918260}
   - component: {fileID: 699918259}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: 4
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1435,7 +1463,7 @@ GameObject:
   - component: {fileID: 749933791}
   - component: {fileID: 749933790}
   - component: {fileID: 749933789}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: 9
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1532,7 +1560,7 @@ GameObject:
   - component: {fileID: 823163481}
   - component: {fileID: 823163480}
   - component: {fileID: 823163479}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: 7
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1671,6 +1699,10 @@ PrefabInstance:
     - target: {fileID: 5961186678239745866, guid: 129b751e22f0aee40b372a1e7aeff0fc, type: 3}
       propertyPath: m_Name
       value: TowerSpawner (5)
+      objectReference: {fileID: 0}
+    - target: {fileID: 5961186678239745866, guid: 129b751e22f0aee40b372a1e7aeff0fc, type: 3}
+      propertyPath: m_Layer
+      value: 8
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 129b751e22f0aee40b372a1e7aeff0fc, type: 3}
@@ -1824,7 +1856,7 @@ GameObject:
   - component: {fileID: 976223378}
   - component: {fileID: 976223377}
   - component: {fileID: 976223376}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: 1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1964,6 +1996,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: TowerSpawner (13)
       objectReference: {fileID: 0}
+    - target: {fileID: 5961186678239745866, guid: 129b751e22f0aee40b372a1e7aeff0fc, type: 3}
+      propertyPath: m_Layer
+      value: 8
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 129b751e22f0aee40b372a1e7aeff0fc, type: 3}
 --- !u!4 &992816612 stripped
@@ -2026,6 +2062,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: TowerSpawner
       objectReference: {fileID: 0}
+    - target: {fileID: 5961186678239745866, guid: 129b751e22f0aee40b372a1e7aeff0fc, type: 3}
+      propertyPath: m_Layer
+      value: 8
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 129b751e22f0aee40b372a1e7aeff0fc, type: 3}
 --- !u!4 &1019962778 stripped
@@ -2087,6 +2127,10 @@ PrefabInstance:
     - target: {fileID: 5961186678239745866, guid: 129b751e22f0aee40b372a1e7aeff0fc, type: 3}
       propertyPath: m_Name
       value: TowerSpawner (2)
+      objectReference: {fileID: 0}
+    - target: {fileID: 5961186678239745866, guid: 129b751e22f0aee40b372a1e7aeff0fc, type: 3}
+      propertyPath: m_Layer
+      value: 8
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 129b751e22f0aee40b372a1e7aeff0fc, type: 3}
@@ -2241,6 +2285,10 @@ PrefabInstance:
     - target: {fileID: 5961186678239745866, guid: 129b751e22f0aee40b372a1e7aeff0fc, type: 3}
       propertyPath: m_Name
       value: TowerSpawner (7)
+      objectReference: {fileID: 0}
+    - target: {fileID: 5961186678239745866, guid: 129b751e22f0aee40b372a1e7aeff0fc, type: 3}
+      propertyPath: m_Layer
+      value: 8
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 129b751e22f0aee40b372a1e7aeff0fc, type: 3}
@@ -2511,6 +2559,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: TowerSpawner (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 5961186678239745866, guid: 129b751e22f0aee40b372a1e7aeff0fc, type: 3}
+      propertyPath: m_Layer
+      value: 8
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 129b751e22f0aee40b372a1e7aeff0fc, type: 3}
 --- !u!4 &1265088519 stripped
@@ -2527,7 +2579,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1318105968}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: TowerSpawners
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2629,6 +2681,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: TowerSpawner (22)
       objectReference: {fileID: 0}
+    - target: {fileID: 5961186678239745866, guid: 129b751e22f0aee40b372a1e7aeff0fc, type: 3}
+      propertyPath: m_Layer
+      value: 8
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 129b751e22f0aee40b372a1e7aeff0fc, type: 3}
 --- !u!4 &1339604982 stripped
@@ -2690,6 +2746,124 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d9b522c3b65023549ad26e3c79c67258, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!1001 &1411562227
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 2018340184}
+    m_Modifications:
+    - target: {fileID: 771745343974196261, guid: 31ec784416defee43a8e89cebcd494ea, type: 3}
+      propertyPath: m_Text
+      value: $350
+      objectReference: {fileID: 0}
+    - target: {fileID: 8024389179470669528, guid: 31ec784416defee43a8e89cebcd494ea, type: 3}
+      propertyPath: m_Pivot.x
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 8024389179470669528, guid: 31ec784416defee43a8e89cebcd494ea, type: 3}
+      propertyPath: m_Pivot.y
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 8024389179470669528, guid: 31ec784416defee43a8e89cebcd494ea, type: 3}
+      propertyPath: m_RootOrder
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 8024389179470669528, guid: 31ec784416defee43a8e89cebcd494ea, type: 3}
+      propertyPath: m_AnchorMax.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8024389179470669528, guid: 31ec784416defee43a8e89cebcd494ea, type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8024389179470669528, guid: 31ec784416defee43a8e89cebcd494ea, type: 3}
+      propertyPath: m_AnchorMin.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8024389179470669528, guid: 31ec784416defee43a8e89cebcd494ea, type: 3}
+      propertyPath: m_AnchorMin.y
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8024389179470669528, guid: 31ec784416defee43a8e89cebcd494ea, type: 3}
+      propertyPath: m_SizeDelta.x
+      value: 200
+      objectReference: {fileID: 0}
+    - target: {fileID: 8024389179470669528, guid: 31ec784416defee43a8e89cebcd494ea, type: 3}
+      propertyPath: m_SizeDelta.y
+      value: 200
+      objectReference: {fileID: 0}
+    - target: {fileID: 8024389179470669528, guid: 31ec784416defee43a8e89cebcd494ea, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8024389179470669528, guid: 31ec784416defee43a8e89cebcd494ea, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8024389179470669528, guid: 31ec784416defee43a8e89cebcd494ea, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8024389179470669528, guid: 31ec784416defee43a8e89cebcd494ea, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8024389179470669528, guid: 31ec784416defee43a8e89cebcd494ea, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8024389179470669528, guid: 31ec784416defee43a8e89cebcd494ea, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8024389179470669528, guid: 31ec784416defee43a8e89cebcd494ea, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8024389179470669528, guid: 31ec784416defee43a8e89cebcd494ea, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 170
+      objectReference: {fileID: 0}
+    - target: {fileID: 8024389179470669528, guid: 31ec784416defee43a8e89cebcd494ea, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: -740
+      objectReference: {fileID: 0}
+    - target: {fileID: 8024389179470669528, guid: 31ec784416defee43a8e89cebcd494ea, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8024389179470669528, guid: 31ec784416defee43a8e89cebcd494ea, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8024389179470669528, guid: 31ec784416defee43a8e89cebcd494ea, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8024389179470669529, guid: 31ec784416defee43a8e89cebcd494ea, type: 3}
+      propertyPath: m_Name
+      value: LaserBeamer
+      objectReference: {fileID: 0}
+    - target: {fileID: 8024389179470669534, guid: 31ec784416defee43a8e89cebcd494ea, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: d1afc2447c3657f4fb8621fa655fd34f, type: 3}
+    - target: {fileID: 8024389179470669535, guid: 31ec784416defee43a8e89cebcd494ea, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 2018340188}
+    - target: {fileID: 8024389179470669535, guid: 31ec784416defee43a8e89cebcd494ea, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: SelectLaserBeamer
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 31ec784416defee43a8e89cebcd494ea, type: 3}
+--- !u!224 &1411562228 stripped
+RectTransform:
+  m_CorrespondingSourceObject: {fileID: 8024389179470669528, guid: 31ec784416defee43a8e89cebcd494ea, type: 3}
+  m_PrefabInstance: {fileID: 1411562227}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &1611496712
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -2744,6 +2918,10 @@ PrefabInstance:
     - target: {fileID: 5961186678239745866, guid: 129b751e22f0aee40b372a1e7aeff0fc, type: 3}
       propertyPath: m_Name
       value: TowerSpawner (19)
+      objectReference: {fileID: 0}
+    - target: {fileID: 5961186678239745866, guid: 129b751e22f0aee40b372a1e7aeff0fc, type: 3}
+      propertyPath: m_Layer
+      value: 8
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 129b751e22f0aee40b372a1e7aeff0fc, type: 3}
@@ -2837,6 +3015,10 @@ PrefabInstance:
     - target: {fileID: 5961186678239745866, guid: 129b751e22f0aee40b372a1e7aeff0fc, type: 3}
       propertyPath: m_Name
       value: TowerSpawner (10)
+      objectReference: {fileID: 0}
+    - target: {fileID: 5961186678239745866, guid: 129b751e22f0aee40b372a1e7aeff0fc, type: 3}
+      propertyPath: m_Layer
+      value: 8
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 129b751e22f0aee40b372a1e7aeff0fc, type: 3}
@@ -2996,6 +3178,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: TowerSpawner (23)
       objectReference: {fileID: 0}
+    - target: {fileID: 5961186678239745866, guid: 129b751e22f0aee40b372a1e7aeff0fc, type: 3}
+      propertyPath: m_Layer
+      value: 8
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 129b751e22f0aee40b372a1e7aeff0fc, type: 3}
 --- !u!4 &1700855758 stripped
@@ -3046,7 +3232,7 @@ GameObject:
   - component: {fileID: 1709613999}
   - component: {fileID: 1709613998}
   - component: {fileID: 1709613997}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: 5
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3186,6 +3372,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: TowerSpawner (6)
       objectReference: {fileID: 0}
+    - target: {fileID: 5961186678239745866, guid: 129b751e22f0aee40b372a1e7aeff0fc, type: 3}
+      propertyPath: m_Layer
+      value: 8
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 129b751e22f0aee40b372a1e7aeff0fc, type: 3}
 --- !u!4 &1776462862 stripped
@@ -3247,6 +3437,10 @@ PrefabInstance:
     - target: {fileID: 5961186678239745866, guid: 129b751e22f0aee40b372a1e7aeff0fc, type: 3}
       propertyPath: m_Name
       value: TowerSpawner (18)
+      objectReference: {fileID: 0}
+    - target: {fileID: 5961186678239745866, guid: 129b751e22f0aee40b372a1e7aeff0fc, type: 3}
+      propertyPath: m_Layer
+      value: 8
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 129b751e22f0aee40b372a1e7aeff0fc, type: 3}
@@ -3315,6 +3509,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: TowerSpawner (9)
       objectReference: {fileID: 0}
+    - target: {fileID: 5961186678239745866, guid: 129b751e22f0aee40b372a1e7aeff0fc, type: 3}
+      propertyPath: m_Layer
+      value: 8
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 129b751e22f0aee40b372a1e7aeff0fc, type: 3}
 --- !u!4 &1885686245 stripped
@@ -3377,6 +3575,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: TowerSpawner (4)
       objectReference: {fileID: 0}
+    - target: {fileID: 5961186678239745866, guid: 129b751e22f0aee40b372a1e7aeff0fc, type: 3}
+      propertyPath: m_Layer
+      value: 8
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 129b751e22f0aee40b372a1e7aeff0fc, type: 3}
 --- !u!4 &1889599341 stripped
@@ -3438,6 +3640,10 @@ PrefabInstance:
     - target: {fileID: 5961186678239745866, guid: 129b751e22f0aee40b372a1e7aeff0fc, type: 3}
       propertyPath: m_Name
       value: TowerSpawner (17)
+      objectReference: {fileID: 0}
+    - target: {fileID: 5961186678239745866, guid: 129b751e22f0aee40b372a1e7aeff0fc, type: 3}
+      propertyPath: m_Layer
+      value: 8
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 129b751e22f0aee40b372a1e7aeff0fc, type: 3}
@@ -3611,6 +3817,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: TowerSpawner (15)
       objectReference: {fileID: 0}
+    - target: {fileID: 5961186678239745866, guid: 129b751e22f0aee40b372a1e7aeff0fc, type: 3}
+      propertyPath: m_Layer
+      value: 8
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 129b751e22f0aee40b372a1e7aeff0fc, type: 3}
 --- !u!4 &1996726546 stripped
@@ -3651,6 +3861,7 @@ RectTransform:
   m_Children:
   - {fileID: 1821054347}
   - {fileID: 5649893066702606220}
+  - {fileID: 1411562228}
   m_Father: {fileID: 246601185}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -3711,6 +3922,9 @@ MonoBehaviour:
   missileLauncher:
     prefab: {fileID: 687101839827467622, guid: eb125b593c1e306408b91329b4cf83f8, type: 3}
     cost: 250
+  laserBeamer:
+    prefab: {fileID: 8244049667274399797, guid: 37a954bebddf52542ac39b45d93e4a69, type: 3}
+    cost: 350
 --- !u!1 &2078301115
 GameObject:
   m_ObjectHideFlags: 0
@@ -3754,7 +3968,7 @@ GameObject:
   - component: {fileID: 2081960755}
   - component: {fileID: 2081960754}
   - component: {fileID: 2081960753}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: 2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3893,6 +4107,10 @@ PrefabInstance:
     - target: {fileID: 5961186678239745866, guid: 129b751e22f0aee40b372a1e7aeff0fc, type: 3}
       propertyPath: m_Name
       value: TowerSpawner (16)
+      objectReference: {fileID: 0}
+    - target: {fileID: 5961186678239745866, guid: 129b751e22f0aee40b372a1e7aeff0fc, type: 3}
+      propertyPath: m_Layer
+      value: 8
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 129b751e22f0aee40b372a1e7aeff0fc, type: 3}
@@ -4039,6 +4257,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: TowerSpawner (3)
       objectReference: {fileID: 0}
+    - target: {fileID: 5961186678239745866, guid: 129b751e22f0aee40b372a1e7aeff0fc, type: 3}
+      propertyPath: m_Layer
+      value: 8
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 129b751e22f0aee40b372a1e7aeff0fc, type: 3}
 --- !u!4 &2130932360 stripped
@@ -4058,7 +4280,7 @@ GameObject:
   - component: {fileID: 2146856314}
   - component: {fileID: 2146856313}
   - component: {fileID: 2146856312}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: 8
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -4168,7 +4390,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8024389179470669528, guid: 31ec784416defee43a8e89cebcd494ea, type: 3}
       propertyPath: m_AnchorMax.y
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 8024389179470669528, guid: 31ec784416defee43a8e89cebcd494ea, type: 3}
       propertyPath: m_AnchorMin.x
@@ -4176,7 +4398,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8024389179470669528, guid: 31ec784416defee43a8e89cebcd494ea, type: 3}
       propertyPath: m_AnchorMin.y
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 8024389179470669528, guid: 31ec784416defee43a8e89cebcd494ea, type: 3}
       propertyPath: m_SizeDelta.x
@@ -4216,11 +4438,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8024389179470669528, guid: 31ec784416defee43a8e89cebcd494ea, type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: 0
+      value: 170
       objectReference: {fileID: 0}
     - target: {fileID: 8024389179470669528, guid: 31ec784416defee43a8e89cebcd494ea, type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: 0
+      value: -540
       objectReference: {fileID: 0}
     - target: {fileID: 8024389179470669528, guid: 31ec784416defee43a8e89cebcd494ea, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
@@ -4278,7 +4500,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5649893066009411753, guid: 38c9db8ed37a0e3438302dcfd9327608, type: 3}
       propertyPath: m_AnchorMax.y
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 5649893066009411753, guid: 38c9db8ed37a0e3438302dcfd9327608, type: 3}
       propertyPath: m_AnchorMin.x
@@ -4286,7 +4508,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5649893066009411753, guid: 38c9db8ed37a0e3438302dcfd9327608, type: 3}
       propertyPath: m_AnchorMin.y
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 5649893066009411753, guid: 38c9db8ed37a0e3438302dcfd9327608, type: 3}
       propertyPath: m_SizeDelta.x
@@ -4326,11 +4548,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5649893066009411753, guid: 38c9db8ed37a0e3438302dcfd9327608, type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: 0
+      value: 170
       objectReference: {fileID: 0}
     - target: {fileID: 5649893066009411753, guid: 38c9db8ed37a0e3438302dcfd9327608, type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: 0
+      value: -340
       objectReference: {fileID: 0}
     - target: {fileID: 5649893066009411753, guid: 38c9db8ed37a0e3438302dcfd9327608, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
