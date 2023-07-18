@@ -45,6 +45,8 @@ public class WaveSpawner : MonoBehaviour
     {
         // ** Wave 단계를 증가시킨다
         waveIndex++;
+        // ** 라운드를 증가시킨다
+        PlayerStats.Rounds++;
 
         // ** Wave 단계에 따라 0.5초마다 함수 호출을 반복한다
         for (int i = 0; i < waveIndex; i++)

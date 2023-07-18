@@ -24,6 +24,11 @@ public class BuildManager : MonoBehaviour
 
     // ** 빌드할 터렛
     private TurretBlueprint turretToBuild;
+    // ** 선택한 터렛
+    private TowerSpawner selectedTurret;
+
+    // ** 터렛 UI
+    public TurretUI turretUI;
 
     // ** 빌드할 터렛이 null이 아닐 때 참인 값
     public bool CanBuild { get { return turretToBuild != null; } }
@@ -51,9 +56,38 @@ public class BuildManager : MonoBehaviour
         Destroy(effect, 5.0f);
     }
 
+    // ** 터렛 선택
+    public void SelectTurret(TowerSpawner turret)
+    {
+        // ** 터렛을 이미 선택했을 경우, 선택을 해제한다
+        if (selectedTurret == turret)
+        {
+            DeselectTurret();
+            return;
+        }
+
+        // ** 터렛을 선택한다
+        selectedTurret = turret;
+        // ** 빌드할 터렛을 해제한다
+        turretToBuild = null;
+
+        // ** 터렛 UI를 표시한다
+        turretUI.SetTarget(turret);
+    }
+
+    // ** 터렛 선택 해제
+    public void DeselectTurret()
+    {
+        // ** 터렛을 선택 해제한다
+        selectedTurret = null;
+        // ** UI를 숨긴다
+        turretUI.Hide();
+    }
+
     // ** 빌드할 터렛을 세팅한다
     public void SelectTurretToBuild( TurretBlueprint turret)
     {
         turretToBuild = turret;
+        DeselectTurret();
     }
 }

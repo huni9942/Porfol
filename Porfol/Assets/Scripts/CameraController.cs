@@ -21,6 +21,13 @@ public class CameraController : MonoBehaviour
 
     void Update()
     {
+        // ** 게임 오버 시, 카메라를 비활성화 한다
+        if (GameManager.GameIsOver)
+        {
+            this.enabled = false;
+            return;
+        }
+
         // ** ESC 버튼 입력 시
         if (Input.GetKeyDown(KeyCode.Escape))
             // ** 카메라를 고정한다

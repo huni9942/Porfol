@@ -13,9 +13,14 @@ public class PlayerStats : MonoBehaviour
     // ** 시작 시 플레이어의 생명력
     public int startLives = 20;
 
+    // ** 라운드 수
+    public static int Rounds;
+
     private void Start()
     {
         Money = startMoney;
         Lives = startLives;
+
+        Rounds = 0;
     }
 }

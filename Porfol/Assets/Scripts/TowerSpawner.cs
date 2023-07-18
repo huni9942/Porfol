@@ -16,9 +16,9 @@ public class TowerSpawner : MonoBehaviour
     // ** 건설할 터렛
     public GameObject turret;
     // ** 렌더러
-    private Renderer rend;
+    public Renderer rend;
     // ** 초기 색상
-    private Color startColor;
+    public Color startColor;
 
     // ** 빌드 매니저 스크립트
     BuildManager buildManager;
@@ -46,15 +46,16 @@ public class TowerSpawner : MonoBehaviour
         if (EventSystem.current.IsPointerOverGameObject())
             return;
 
+        // ** 터렛 존재 시 선택한다
+        if (turret != null)
+        {
+             buildManager.SelectTurret(this);
+             return;
+        }
+
         // ** 빌드할 터렛이 존재하지 않을 때 반환한다
         if (!buildManager.CanBuild)
             return;
-
-        // ** 터렛 존재 시 반환한다
-        if (turret != null)
-        {
-            return;
-        }
 
         // ** 그 외의 경우에 터렛을 빌드한다
         buildManager.BuildTurretOn(this);
@@ -90,6 +91,6 @@ public class TowerSpawner : MonoBehaviour
     // ** 마우스가 벗어났을 때 색상 초기화
     private void OnMouseExit()
     {
-        rend.material.color = startColor;
+            rend.material.color = startColor;
     }
 }
