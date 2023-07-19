@@ -61,6 +61,7 @@
     <Compile Include="Assets\Scripts\BulletController.cs" />
     <Compile Include="Assets\Scripts\Waypoints.cs" />
     <Compile Include="Assets\Scripts\GameManager.cs" />
+    <Compile Include="Assets\Scripts\SpawnerController.cs" />
     <Compile Include="Assets\Scripts\WaveSpawner.cs" />
     <Compile Include="Assets\Scripts\TurretController.cs" />
     <Compile Include="Assets\Scripts\BuildManager.cs" />
@@ -70,10 +71,9 @@
     <Compile Include="Assets\Scripts\LivesUI.cs" />
     <Compile Include="Assets\Scripts\ShopController.cs" />
     <Compile Include="Assets\Scripts\EnemyController.cs" />
+    <Compile Include="Assets\Scripts\TurretUI.cs" />
     <Compile Include="Assets\Scripts\PlayerStats.cs" />
     <Compile Include="Assets\Scripts\GameOver.cs" />
-    <Compile Include="Assets\Scripts\TurretUI.cs" />
-    <Compile Include="Assets\Scripts\SpawnerController.cs" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="UnityEngine">

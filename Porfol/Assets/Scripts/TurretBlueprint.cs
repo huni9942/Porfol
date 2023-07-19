@@ -10,4 +10,6 @@ public class TurretBlueprint
     // ** ем╥© ╨Я©К
     public int cost;
 
+    public GameObject upgradedPrefab;
+    public int upgradeCost;
 }

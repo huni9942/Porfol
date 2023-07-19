@@ -12,9 +12,13 @@ public class TowerSpawner : MonoBehaviour
     // ** 터렛의 위치 조정
     public Vector3 positionOffset;
 
-    [Header("Optional")]
+    [HideInInspector]
     // ** 건설할 터렛
     public GameObject turret;
+    [HideInInspector]
+    public TurretBlueprint turretBlueprint;
+    [HideInInspector]
+    public bool isUpgraded = false;
     // ** 렌더러
     public Renderer rend;
     // ** 초기 색상
@@ -58,7 +62,53 @@ public class TowerSpawner : MonoBehaviour
             return;
 
         // ** 그 외의 경우에 터렛을 빌드한다
-        buildManager.BuildTurretOn(this);
+        BuildTurret(buildManager.GetTurretToBuild());
+    }
+
+    void BuildTurret(TurretBlueprint blueprint)
+    {
+        // ** 보유한 돈이 터렛 가격보다 적을 경우 반환한다
+        if (PlayerStats.Money < blueprint.cost)
+            return;
+
+        // ** 보유한 돈에서 터렛 가격만큼 차감한다
+        PlayerStats.Money -= blueprint.cost;
+
+        // ** 빌드할 터렛을 복사한다
+        GameObject _turret = (GameObject)Instantiate(blueprint.prefab, GetBuildPosition(), Quaternion.identity);
+        // ** 복사한 터렛을 빌드한다
+        turret = _turret;
+
+        turretBlueprint = blueprint;
+
+        // ** 빌드 시 이펙트를 복사 생성한다
+        GameObject effect = (GameObject)Instantiate(buildManager.buildEffect, GetBuildPosition(), Quaternion.identity);
+        // ** 이펙트를 소멸시킨다
+        Destroy(effect, 5.0f);
+    }
+
+    public void UpgradeTurret()
+    {
+        // ** 보유한 돈이 터렛 가격보다 적을 경우 반환한다
+        if (PlayerStats.Money < turretBlueprint.upgradeCost)
+            return;
+
+        // ** 보유한 돈에서 터렛 가격만큼 차감한다
+        PlayerStats.Money -= turretBlueprint.upgradeCost;
+
+        Destroy(turret);
+
+        // ** 빌드할 터렛을 복사한다
+        GameObject _turret = (GameObject)Instantiate(turretBlueprint.upgradedPrefab, GetBuildPosition(), Quaternion.identity);
+        // ** 복사한 터렛을 빌드한다
+        turret = _turret;
+
+        // ** 빌드 시 이펙트를 복사 생성한다
+        GameObject effect = (GameObject)Instantiate(buildManager.buildEffect, GetBuildPosition(), Quaternion.identity);
+        // ** 이펙트를 소멸시킨다
+        Destroy(effect, 5.0f);
+
+        isUpgraded = true;
     }
 
     // ** 마우스를 감지했을 때 색상 변경
