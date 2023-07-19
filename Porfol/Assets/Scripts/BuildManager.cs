@@ -21,6 +21,8 @@ public class BuildManager : MonoBehaviour
     public GameObject MissileLauncherPrefab;
     // ** ≈Õ∑ø ∫ÙµÂ Ω√ ¿Ã∆Â∆Æ
     public GameObject buildEffect;
+    // ** ≈Õ∑ø ∆«∏≈ Ω√ ¿Ã∆Â∆Æ
+    public GameObject sellEffect;
 
     // ** ∫ÙµÂ«“ ≈Õ∑ø
     private TurretBlueprint turretToBuild;
@@ -71,6 +73,7 @@ public class BuildManager : MonoBehaviour
         DeselectTurret();
     }
 
+    // ** ∫ÙµÂ«“ ≈Õ∑ø¿ª ∫“∑Øø¬¥Ÿ
     public TurretBlueprint GetTurretToBuild()
     {
         return turretToBuild;

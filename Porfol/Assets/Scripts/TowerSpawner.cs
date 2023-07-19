@@ -16,8 +16,10 @@ public class TowerSpawner : MonoBehaviour
     // ** 건설할 터렛
     public GameObject turret;
     [HideInInspector]
+    // ** 터렛 청사진
     public TurretBlueprint turretBlueprint;
     [HideInInspector]
+    // ** 업그레이드 상태
     public bool isUpgraded = false;
     // ** 렌더러
     public Renderer rend;
@@ -32,6 +34,9 @@ public class TowerSpawner : MonoBehaviour
         rend = GetComponent<Renderer>();
         // ** 초기 색상을 설정한다
         startColor = rend.material.color;
+
+        // ** 타워 위치를 Y축으로 1만큼 올린다
+        positionOffset = Vector3.up;
 
         // ** 빌드 매니저의 인스턴스
         buildManager = BuildManager.instance;
@@ -108,7 +113,22 @@ public class TowerSpawner : MonoBehaviour
         // ** 이펙트를 소멸시킨다
         Destroy(effect, 5.0f);
 
+        // ** 업그레이드 상태를 참으로 한다
         isUpgraded = true;
+    }
+
+    // ** 터렛 판매
+    public void SellTurret()
+    {
+        // ** 플레이어가 현재 보유한 돈을 판매한 값 만큼 증가시킨다
+        PlayerStats.Money += turretBlueprint.GetSellAmount();
+
+        // ** 빌드 시 이펙트를 복사 생성한다
+        GameObject effect = (GameObject)Instantiate(buildManager.sellEffect, GetBuildPosition(), Quaternion.identity);
+        // ** 이펙트와 터렛을 소멸시킨다
+        Destroy(effect, 5.0f);
+        Destroy(turret);
+        turretBlueprint = null;
     }
 
     // ** 마우스를 감지했을 때 색상 변경

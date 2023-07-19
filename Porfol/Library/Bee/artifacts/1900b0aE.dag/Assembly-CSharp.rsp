@@ -356,6 +356,7 @@
 "Assets/Scripts/GameOver.cs"
 "Assets/Scripts/LivesUI.cs"
 "Assets/Scripts/MoneyUI.cs"
+"Assets/Scripts/PauseMenu.cs"
 "Assets/Scripts/PlayerStats.cs"
 "Assets/Scripts/ShopController.cs"
 "Assets/Scripts/SpawnerController.cs"

@@ -4,9 +4,6 @@ using UnityEngine;
 
 public class CameraController : MonoBehaviour
 {
-    // ** 카메라 고정 및 이동
-    private bool doMovement = true;
-
     // ** 스크린이 움직일 속도
     public float panSpeed = 30.0f;
     // ** 스크린을 움직일 가장자리 두께
@@ -27,15 +24,6 @@ public class CameraController : MonoBehaviour
             this.enabled = false;
             return;
         }
-
-        // ** ESC 버튼 입력 시
-        if (Input.GetKeyDown(KeyCode.Escape))
-            // ** 카메라를 고정한다
-            doMovement = !doMovement;
-
-        // ** 카메라 고정 시 여기서 반환한다
-        if (!doMovement)
-            return;
 
         // ** 키 입력 혹은 마우스 포인터를 스크린 가장자리로 이동할 시, 카메라 이동
         if (Input.GetKey("w") || Input.mousePosition.y >= Screen.height - panBorderThickness)
