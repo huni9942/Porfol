@@ -56,25 +56,28 @@
     <Analyzer Include="C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\Common7\IDE\Extensions\Microsoft\Visual Studio Tools for Unity\Analyzers\Microsoft.Unity.Analyzers.dll" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Assets\Scripts\TurretBlueprint.cs" />
-    <Compile Include="Assets\Scripts\CameraController.cs" />
-    <Compile Include="Assets\Scripts\BulletController.cs" />
-    <Compile Include="Assets\Scripts\Waypoints.cs" />
-    <Compile Include="Assets\Scripts\GameManager.cs" />
-    <Compile Include="Assets\Scripts\SpawnerController.cs" />
-    <Compile Include="Assets\Scripts\WaveSpawner.cs" />
-    <Compile Include="Assets\Scripts\TurretController.cs" />
-    <Compile Include="Assets\Scripts\BuildManager.cs" />
-    <Compile Include="Assets\Scripts\MoneyUI.cs" />
-    <Compile Include="Assets\Scripts\TowerSpawner.cs" />
-    <Compile Include="Assets\Scripts\EnemyMovement.cs" />
-    <Compile Include="Assets\Scripts\LivesUI.cs" />
-    <Compile Include="Assets\Scripts\ShopController.cs" />
-    <Compile Include="Assets\Scripts\EnemyController.cs" />
-    <Compile Include="Assets\Scripts\TurretUI.cs" />
-    <Compile Include="Assets\Scripts\PlayerStats.cs" />
-    <Compile Include="Assets\Scripts\GameOver.cs" />
-    <Compile Include="Assets\Scripts\PauseMenu.cs" />
+    <Compile Include="Assets\Scripts\MainScene\TurretBlueprint.cs" />
+    <Compile Include="Assets\Scripts\MainScene\CameraController.cs" />
+    <Compile Include="Assets\Scripts\MainScene\BulletController.cs" />
+    <Compile Include="Assets\Scripts\MainScene\Waypoints.cs" />
+    <Compile Include="Assets\Scripts\MainScene\GameManager.cs" />
+    <Compile Include="Assets\Scripts\MainScene\SpawnerController.cs" />
+    <Compile Include="Assets\Scripts\MainScene\WaveSpawner.cs" />
+    <Compile Include="Assets\Scripts\MainScene\TurretController.cs" />
+    <Compile Include="Assets\Scripts\MainScene\BuildManager.cs" />
+    <Compile Include="Assets\Scripts\MainScene\MoneyUI.cs" />
+    <Compile Include="Assets\Scripts\MainScene\TowerSpawner.cs" />
+    <Compile Include="Assets\Scripts\MainScene\EnemyMovement.cs" />
+    <Compile Include="Assets\Scripts\MainScene\LivesUI.cs" />
+    <Compile Include="Assets\Scripts\MainMenu.cs" />
+    <Compile Include="Assets\Scripts\MainScene\ShopController.cs" />
+    <Compile Include="Assets\Scripts\MainScene\EnemyController.cs" />
+    <Compile Include="Assets\Scripts\MainScene\TurretUI.cs" />
+    <Compile Include="Assets\Scripts\MainScene\PlayerStats.cs" />
+    <Compile Include="Assets\Scripts\MainScene\GameOver.cs" />
+    <Compile Include="Assets\Scripts\MainScene\PauseMenu.cs" />
+    <Compile Include="Assets\Scripts\MainScene\SceneFader.cs" />
+    <Compile Include="Assets\Scripts\MainScene\WaveController.cs" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="UnityEngine">
