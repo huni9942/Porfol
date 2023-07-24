@@ -21,6 +21,9 @@ public class WaveSpawner : MonoBehaviour
     // ** countdown을 표기하는 텍스트
     public Text waveCountdownText;
 
+    // ** 승리 시 처리를 위한 게임 매니저 
+    public GameManager gameManager;
+
     // ** 현재 Wave 단계
     private int waveIndex = 0;
 
@@ -59,6 +62,8 @@ public class WaveSpawner : MonoBehaviour
         // ** 현재 Wave 목록의 Wave를 불러온다
         WaveController wave = waves[waveIndex];
 
+        EnemiesAlive = wave.count;
+
         // ** Wave 단계에 따라 일정 간격마다 함수 호출을 반복한다
         for (int i = 0; i < wave.count; i++)
         {
@@ -68,9 +73,10 @@ public class WaveSpawner : MonoBehaviour
         // ** Wave 단계를 증가시킨다
         waveIndex++;
 
-        // ** Wave가 끝나면 종료한다
+        // ** Wave가 끝나면 승리 처리 후 비활성화한다
         if (waveIndex == waves.Length)
         {
+            gameManager.winLevel();
             this.enabled = false;
         }
     }
@@ -80,6 +86,5 @@ public class WaveSpawner : MonoBehaviour
     {
         // ** spawnPoint의 위치와 회전값을 가진 enemy를 복사 생성한다
         Instantiate(enemy, spawnPoint.position, spawnPoint.rotation);
-        EnemiesAlive++;
     }
 }
