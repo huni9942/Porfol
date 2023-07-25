@@ -25,6 +25,7 @@ public class EnemyController : MonoBehaviour
 
     public Image healthBar;
 
+    private bool isDead = false;
     private void Start()
     {
         // ** 속도를 초기화한다
@@ -42,7 +43,7 @@ public class EnemyController : MonoBehaviour
         healthBar.fillAmount = health / starthealth;
 
         // ** 체력이 0이하일 때 사망한다
-        if (health <= 0)
+        if (health <= 0 && !isDead)
         {
             Die();
         }
@@ -57,6 +58,8 @@ public class EnemyController : MonoBehaviour
     // ** Enemy 사망 시
     void Die()
     {
+        isDead = true;
+
         // ** 플레이어의 돈이 보상만큼 증가한다
         PlayerStats.Money += reward;
 

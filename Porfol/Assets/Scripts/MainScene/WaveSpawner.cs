@@ -35,6 +35,13 @@ public class WaveSpawner : MonoBehaviour
             return;
         }
 
+        // ** Wave가 끝나면 승리 처리 후 비활성화한다
+        if (waveIndex == waves.Length)
+        {
+            gameManager.winLevel();
+            this.enabled = false;
+        }
+
         // ** countdown이 0이하일 때 SpawnWave 코루틴 함수 실행 및 countdown 초기화
         if (countdown <= 0.0f)
         {
@@ -73,12 +80,7 @@ public class WaveSpawner : MonoBehaviour
         // ** Wave 단계를 증가시킨다
         waveIndex++;
 
-        // ** Wave가 끝나면 승리 처리 후 비활성화한다
-        if (waveIndex == waves.Length)
-        {
-            gameManager.winLevel();
-            this.enabled = false;
-        }
+        
     }
 
     // ** Enemy 생성 함수
