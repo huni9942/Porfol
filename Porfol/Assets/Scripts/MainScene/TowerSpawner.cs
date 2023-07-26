@@ -54,7 +54,6 @@ public class TowerSpawner : MonoBehaviour
         // ** 마우스 포인터가 다른 게임 오브젝트 위에 존재할 때 반환한다
         if (EventSystem.current.IsPointerOverGameObject())
             return;
-
         // ** 터렛 존재 시 선택한다
         if (turret != null)
         {

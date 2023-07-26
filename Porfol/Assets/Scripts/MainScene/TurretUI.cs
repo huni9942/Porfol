@@ -29,18 +29,18 @@ public class TurretUI : MonoBehaviour
         // ** 터렛이 업그레이드 된 상태가 아닐 때, 버튼 상호작용 활성화
         if(!target.isUpgraded)
         {
-            upgradeCost.text = "$" + target.turretBlueprint.upgradeCost;
+            upgradeCost.text = target.turretBlueprint.upgradeCost + "G";
             upgradeButton.interactable = true;
         }
         // ** 터렛이 업그레이드 상태일 때, 버튼 상호작용 비활성화
         else
         {
-            upgradeCost.text = "DONE";
+            upgradeCost.text = "완료";
             upgradeButton.interactable = false;
         }
 
         // ** 터렛 판매 텍스트
-        sellAmount.text = "$" + target.turretBlueprint.GetSellAmount();
+        sellAmount.text = target.turretBlueprint.GetSellAmount() + "G";
 
         // ** UI 활성화
         ui.SetActive(true);

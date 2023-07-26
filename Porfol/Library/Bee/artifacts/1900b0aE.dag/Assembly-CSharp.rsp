@@ -355,6 +355,7 @@
 "Assets/Scripts/MainScene/CompleteLevel.cs"
 "Assets/Scripts/MainScene/EnemyController.cs"
 "Assets/Scripts/MainScene/EnemyMovement.cs"
+"Assets/Scripts/MainScene/Floor.cs"
 "Assets/Scripts/MainScene/GameManager.cs"
 "Assets/Scripts/MainScene/GameOver.cs"
 "Assets/Scripts/MainScene/LivesUI.cs"

@@ -338,7 +338,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5130095145700851315, guid: 52ad1fd1248a2e944b78b5a1a11c359f, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_StringArgument
-      value: 2
+      value: Level02
       objectReference: {fileID: 0}
     - target: {fileID: 5130095145700851315, guid: 52ad1fd1248a2e944b78b5a1a11c359f, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
@@ -1252,7 +1252,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5130095145700851315, guid: 52ad1fd1248a2e944b78b5a1a11c359f, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_StringArgument
-      value: 3
+      value: Level03
       objectReference: {fileID: 0}
     - target: {fileID: 5130095145700851315, guid: 52ad1fd1248a2e944b78b5a1a11c359f, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
@@ -1622,7 +1622,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5130095145700851315, guid: 52ad1fd1248a2e944b78b5a1a11c359f, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_StringArgument
-      value: 1
+      value: Level01
       objectReference: {fileID: 0}
     - target: {fileID: 5130095145700851315, guid: 52ad1fd1248a2e944b78b5a1a11c359f, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
