@@ -10,6 +10,7 @@ public class ShopController : MonoBehaviour
     public TurretBlueprint missileLauncher;
     // ** 레이저 터렛의 청사진
     public TurretBlueprint laserBeamer;
+    public TurretBlueprint bombTurret;
 
     // ** 빌드 매니저 스크립트
     BuildManager buildManager;
@@ -39,5 +40,10 @@ public class ShopController : MonoBehaviour
     {
         // ** 레이저 터렛을 빌드할 터렛으로 세팅한다
         buildManager.SelectTurretToBuild(laserBeamer);
+    }
+
+    public void SelectBombTurret()
+    {
+        buildManager.SelectTurretToBuild(bombTurret);
     }
 }

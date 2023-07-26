@@ -9,7 +9,7 @@ public class EnemyMovement : MonoBehaviour
     private Transform target;
     // ** waypoint의 index를 가리킬 변수 wavepointIndex
     private int wavepointIndex = 0;
-
+    public GameObject rig;
     // ** Enemy가 가진 스크립트
     private EnemyController enemy;
 
@@ -53,6 +53,7 @@ public class EnemyMovement : MonoBehaviour
         wavepointIndex++;
         // ** 다음 Waypoint를 target으로 지정한다
         target = Waypoints.points[wavepointIndex];
+        rig.transform.LookAt(target.transform);
     }
 
     // ** Enemy가 최종 Waypoint에 도달했을 때
