@@ -66,10 +66,17 @@ public class BuildManager : MonoBehaviour
         turretUI.Hide();
     }
 
-    // ** 빌드할 터렛을 세팅한다
+    // ** 빌드할 터렛을 선택한다
     public void SelectTurretToBuild( TurretBlueprint turret)
     {
         turretToBuild = turret;
+        DeselectTurret();
+    }
+
+    // ** 빌드할 터렛을 선택 해제한다
+    public void DeseletTurretToBuild()
+    {
+        turretToBuild = null;
         DeselectTurret();
     }
 

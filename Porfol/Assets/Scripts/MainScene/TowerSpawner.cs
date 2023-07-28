@@ -5,10 +5,14 @@ using UnityEngine.EventSystems;
 
 public class TowerSpawner : MonoBehaviour
 {
-    // ** 마우스를 감지했을 때 색상
+    // ** 마우스를 감지했을 시 색상
     public Color hoverColor;
-    // ** 돈이 부족할 때 색상
-    public Color notEnoughMoneyColor;
+    // ** 건설 가능할 시 색상
+    public Color canBuildColor;
+    // ** 건설 불가능 시 색상
+    public Color cannotBuildColor;
+    // ** 업그레이드 가능할 시 색상
+    public Color canUpgradeColor;
     // ** 터렛의 위치 조정
     public Vector3 positionOffset;
 
@@ -128,6 +132,7 @@ public class TowerSpawner : MonoBehaviour
         Destroy(effect, 5.0f);
         Destroy(turret);
         turretBlueprint = null;
+        isUpgraded = false;
     }
 
     // ** 마우스를 감지했을 때 색상 변경
@@ -137,24 +142,24 @@ public class TowerSpawner : MonoBehaviour
         if (EventSystem.current.IsPointerOverGameObject())
             return;
 
-        // ** 빌드할 터렛이 존재하지 않을 때 반환한다
-        if (!buildManager.CanBuild)
-            return;
-        // ** TowerSpawner의 컬러를 변경한다
-        rend.material.color = hoverColor;
-
-        // ** 돈이 충분할 경우
-        if(buildManager.HasMoney)
-        {
-            // ** 터렛 빌드 가능 색상으로 변경한다
-            rend.material.color = hoverColor;
-        }
-        // ** 돈이 부족할 경우
+        // ** 터렛을 선택했으나 이미 터렛이 존재할 때
+        if (buildManager.CanBuild && turret != null)
+            rend.material.color = cannotBuildColor;
+        // ** 터렛을 선택하고 터렛이 존재하지 않을 때
+        else if (buildManager.CanBuild && turret == null)
+            rend.material.color = canBuildColor;
         else
+            rend.material.color = hoverColor;
+
+        // ** 터렛을 선택했으나 돈이 없을 경우
+        if (buildManager.CanBuild && !buildManager.HasMoney)
         {
-            // ** 터렛 빌드 불가능 색상으로 변경한다
-            rend.material.color = notEnoughMoneyColor;
+            rend.material.color = cannotBuildColor;
         }
+
+        // ** 터렛이 존재하고 업그레이드된 상태가 아니며 돈이 충분할 경우
+        if (turret !=null && !isUpgraded && PlayerStats.Money > turretBlueprint.upgradeCost)
+            rend.material.color = canUpgradeColor;
     }
 
     // ** 마우스가 벗어났을 때 색상 초기화

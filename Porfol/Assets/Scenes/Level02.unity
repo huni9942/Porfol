@@ -248,6 +248,34 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1318105968}
     m_Modifications:
+    - target: {fileID: -2908243632039086188, guid: 129b751e22f0aee40b372a1e7aeff0fc, type: 3}
+      propertyPath: canBuildColor.b
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: -2908243632039086188, guid: 129b751e22f0aee40b372a1e7aeff0fc, type: 3}
+      propertyPath: canBuildColor.g
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -2908243632039086188, guid: 129b751e22f0aee40b372a1e7aeff0fc, type: 3}
+      propertyPath: canBuildColor.r
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -2908243632039086188, guid: 129b751e22f0aee40b372a1e7aeff0fc, type: 3}
+      propertyPath: canUpgradeColor.g
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: -2908243632039086188, guid: 129b751e22f0aee40b372a1e7aeff0fc, type: 3}
+      propertyPath: cannotBuildColor.b
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -2908243632039086188, guid: 129b751e22f0aee40b372a1e7aeff0fc, type: 3}
+      propertyPath: cannotBuildColor.g
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -2908243632039086188, guid: 129b751e22f0aee40b372a1e7aeff0fc, type: 3}
+      propertyPath: cannotBuildColor.r
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 5961186678239745862, guid: 129b751e22f0aee40b372a1e7aeff0fc, type: 3}
       propertyPath: m_RootOrder
       value: 9
@@ -345,6 +373,34 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1318105968}
     m_Modifications:
+    - target: {fileID: -2908243632039086188, guid: 129b751e22f0aee40b372a1e7aeff0fc, type: 3}
+      propertyPath: canBuildColor.b
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: -2908243632039086188, guid: 129b751e22f0aee40b372a1e7aeff0fc, type: 3}
+      propertyPath: canBuildColor.g
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -2908243632039086188, guid: 129b751e22f0aee40b372a1e7aeff0fc, type: 3}
+      propertyPath: canBuildColor.r
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -2908243632039086188, guid: 129b751e22f0aee40b372a1e7aeff0fc, type: 3}
+      propertyPath: canUpgradeColor.g
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: -2908243632039086188, guid: 129b751e22f0aee40b372a1e7aeff0fc, type: 3}
+      propertyPath: cannotBuildColor.b
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -2908243632039086188, guid: 129b751e22f0aee40b372a1e7aeff0fc, type: 3}
+      propertyPath: cannotBuildColor.g
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -2908243632039086188, guid: 129b751e22f0aee40b372a1e7aeff0fc, type: 3}
+      propertyPath: cannotBuildColor.r
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 5961186678239745862, guid: 129b751e22f0aee40b372a1e7aeff0fc, type: 3}
       propertyPath: m_RootOrder
       value: 8
@@ -1201,7 +1257,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
+      - m_Target: {fileID: 1340271736}
         m_TargetAssemblyTypeName: PauseMenu, Assembly-CSharp
         m_MethodName: Retry
         m_Mode: 1
@@ -1258,6 +1314,34 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1318105968}
     m_Modifications:
+    - target: {fileID: -2908243632039086188, guid: 129b751e22f0aee40b372a1e7aeff0fc, type: 3}
+      propertyPath: canBuildColor.b
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: -2908243632039086188, guid: 129b751e22f0aee40b372a1e7aeff0fc, type: 3}
+      propertyPath: canBuildColor.g
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -2908243632039086188, guid: 129b751e22f0aee40b372a1e7aeff0fc, type: 3}
+      propertyPath: canBuildColor.r
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -2908243632039086188, guid: 129b751e22f0aee40b372a1e7aeff0fc, type: 3}
+      propertyPath: canUpgradeColor.g
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: -2908243632039086188, guid: 129b751e22f0aee40b372a1e7aeff0fc, type: 3}
+      propertyPath: cannotBuildColor.b
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -2908243632039086188, guid: 129b751e22f0aee40b372a1e7aeff0fc, type: 3}
+      propertyPath: cannotBuildColor.g
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -2908243632039086188, guid: 129b751e22f0aee40b372a1e7aeff0fc, type: 3}
+      propertyPath: cannotBuildColor.r
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 5961186678239745862, guid: 129b751e22f0aee40b372a1e7aeff0fc, type: 3}
       propertyPath: m_RootOrder
       value: 13
@@ -1738,6 +1822,34 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1318105968}
     m_Modifications:
+    - target: {fileID: -2908243632039086188, guid: 129b751e22f0aee40b372a1e7aeff0fc, type: 3}
+      propertyPath: canBuildColor.b
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: -2908243632039086188, guid: 129b751e22f0aee40b372a1e7aeff0fc, type: 3}
+      propertyPath: canBuildColor.g
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -2908243632039086188, guid: 129b751e22f0aee40b372a1e7aeff0fc, type: 3}
+      propertyPath: canBuildColor.r
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -2908243632039086188, guid: 129b751e22f0aee40b372a1e7aeff0fc, type: 3}
+      propertyPath: canUpgradeColor.g
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: -2908243632039086188, guid: 129b751e22f0aee40b372a1e7aeff0fc, type: 3}
+      propertyPath: cannotBuildColor.b
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -2908243632039086188, guid: 129b751e22f0aee40b372a1e7aeff0fc, type: 3}
+      propertyPath: cannotBuildColor.g
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -2908243632039086188, guid: 129b751e22f0aee40b372a1e7aeff0fc, type: 3}
+      propertyPath: cannotBuildColor.r
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 5961186678239745862, guid: 129b751e22f0aee40b372a1e7aeff0fc, type: 3}
       propertyPath: m_RootOrder
       value: 7
@@ -3232,6 +3344,34 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1318105968}
     m_Modifications:
+    - target: {fileID: -2908243632039086188, guid: 129b751e22f0aee40b372a1e7aeff0fc, type: 3}
+      propertyPath: canBuildColor.b
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: -2908243632039086188, guid: 129b751e22f0aee40b372a1e7aeff0fc, type: 3}
+      propertyPath: canBuildColor.g
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -2908243632039086188, guid: 129b751e22f0aee40b372a1e7aeff0fc, type: 3}
+      propertyPath: canBuildColor.r
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -2908243632039086188, guid: 129b751e22f0aee40b372a1e7aeff0fc, type: 3}
+      propertyPath: canUpgradeColor.g
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: -2908243632039086188, guid: 129b751e22f0aee40b372a1e7aeff0fc, type: 3}
+      propertyPath: cannotBuildColor.b
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -2908243632039086188, guid: 129b751e22f0aee40b372a1e7aeff0fc, type: 3}
+      propertyPath: cannotBuildColor.g
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -2908243632039086188, guid: 129b751e22f0aee40b372a1e7aeff0fc, type: 3}
+      propertyPath: cannotBuildColor.r
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 5961186678239745862, guid: 129b751e22f0aee40b372a1e7aeff0fc, type: 3}
       propertyPath: m_RootOrder
       value: 10
@@ -3681,6 +3821,34 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1318105968}
     m_Modifications:
+    - target: {fileID: -2908243632039086188, guid: 129b751e22f0aee40b372a1e7aeff0fc, type: 3}
+      propertyPath: canBuildColor.b
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: -2908243632039086188, guid: 129b751e22f0aee40b372a1e7aeff0fc, type: 3}
+      propertyPath: canBuildColor.g
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -2908243632039086188, guid: 129b751e22f0aee40b372a1e7aeff0fc, type: 3}
+      propertyPath: canBuildColor.r
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -2908243632039086188, guid: 129b751e22f0aee40b372a1e7aeff0fc, type: 3}
+      propertyPath: canUpgradeColor.g
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: -2908243632039086188, guid: 129b751e22f0aee40b372a1e7aeff0fc, type: 3}
+      propertyPath: cannotBuildColor.b
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -2908243632039086188, guid: 129b751e22f0aee40b372a1e7aeff0fc, type: 3}
+      propertyPath: cannotBuildColor.g
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -2908243632039086188, guid: 129b751e22f0aee40b372a1e7aeff0fc, type: 3}
+      propertyPath: cannotBuildColor.r
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 5961186678239745862, guid: 129b751e22f0aee40b372a1e7aeff0fc, type: 3}
       propertyPath: m_RootOrder
       value: 0
@@ -3747,6 +3915,34 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1318105968}
     m_Modifications:
+    - target: {fileID: -2908243632039086188, guid: 129b751e22f0aee40b372a1e7aeff0fc, type: 3}
+      propertyPath: canBuildColor.b
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: -2908243632039086188, guid: 129b751e22f0aee40b372a1e7aeff0fc, type: 3}
+      propertyPath: canBuildColor.g
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -2908243632039086188, guid: 129b751e22f0aee40b372a1e7aeff0fc, type: 3}
+      propertyPath: canBuildColor.r
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -2908243632039086188, guid: 129b751e22f0aee40b372a1e7aeff0fc, type: 3}
+      propertyPath: canUpgradeColor.g
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: -2908243632039086188, guid: 129b751e22f0aee40b372a1e7aeff0fc, type: 3}
+      propertyPath: cannotBuildColor.b
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -2908243632039086188, guid: 129b751e22f0aee40b372a1e7aeff0fc, type: 3}
+      propertyPath: cannotBuildColor.g
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -2908243632039086188, guid: 129b751e22f0aee40b372a1e7aeff0fc, type: 3}
+      propertyPath: cannotBuildColor.r
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 5961186678239745862, guid: 129b751e22f0aee40b372a1e7aeff0fc, type: 3}
       propertyPath: m_RootOrder
       value: 12
@@ -4263,6 +4459,34 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1318105968}
     m_Modifications:
+    - target: {fileID: -2908243632039086188, guid: 129b751e22f0aee40b372a1e7aeff0fc, type: 3}
+      propertyPath: canBuildColor.b
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: -2908243632039086188, guid: 129b751e22f0aee40b372a1e7aeff0fc, type: 3}
+      propertyPath: canBuildColor.g
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -2908243632039086188, guid: 129b751e22f0aee40b372a1e7aeff0fc, type: 3}
+      propertyPath: canBuildColor.r
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -2908243632039086188, guid: 129b751e22f0aee40b372a1e7aeff0fc, type: 3}
+      propertyPath: canUpgradeColor.g
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: -2908243632039086188, guid: 129b751e22f0aee40b372a1e7aeff0fc, type: 3}
+      propertyPath: cannotBuildColor.b
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -2908243632039086188, guid: 129b751e22f0aee40b372a1e7aeff0fc, type: 3}
+      propertyPath: cannotBuildColor.g
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -2908243632039086188, guid: 129b751e22f0aee40b372a1e7aeff0fc, type: 3}
+      propertyPath: cannotBuildColor.r
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 5961186678239745862, guid: 129b751e22f0aee40b372a1e7aeff0fc, type: 3}
       propertyPath: m_RootOrder
       value: 2
@@ -4329,6 +4553,34 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1318105968}
     m_Modifications:
+    - target: {fileID: -2908243632039086188, guid: 129b751e22f0aee40b372a1e7aeff0fc, type: 3}
+      propertyPath: canBuildColor.b
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: -2908243632039086188, guid: 129b751e22f0aee40b372a1e7aeff0fc, type: 3}
+      propertyPath: canBuildColor.g
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -2908243632039086188, guid: 129b751e22f0aee40b372a1e7aeff0fc, type: 3}
+      propertyPath: canBuildColor.r
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -2908243632039086188, guid: 129b751e22f0aee40b372a1e7aeff0fc, type: 3}
+      propertyPath: canUpgradeColor.g
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: -2908243632039086188, guid: 129b751e22f0aee40b372a1e7aeff0fc, type: 3}
+      propertyPath: cannotBuildColor.b
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -2908243632039086188, guid: 129b751e22f0aee40b372a1e7aeff0fc, type: 3}
+      propertyPath: cannotBuildColor.g
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -2908243632039086188, guid: 129b751e22f0aee40b372a1e7aeff0fc, type: 3}
+      propertyPath: cannotBuildColor.r
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 5961186678239745862, guid: 129b751e22f0aee40b372a1e7aeff0fc, type: 3}
       propertyPath: m_RootOrder
       value: 5
@@ -4662,6 +4914,34 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1318105968}
     m_Modifications:
+    - target: {fileID: -2908243632039086188, guid: 129b751e22f0aee40b372a1e7aeff0fc, type: 3}
+      propertyPath: canBuildColor.b
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: -2908243632039086188, guid: 129b751e22f0aee40b372a1e7aeff0fc, type: 3}
+      propertyPath: canBuildColor.g
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -2908243632039086188, guid: 129b751e22f0aee40b372a1e7aeff0fc, type: 3}
+      propertyPath: canBuildColor.r
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -2908243632039086188, guid: 129b751e22f0aee40b372a1e7aeff0fc, type: 3}
+      propertyPath: canUpgradeColor.g
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: -2908243632039086188, guid: 129b751e22f0aee40b372a1e7aeff0fc, type: 3}
+      propertyPath: cannotBuildColor.b
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -2908243632039086188, guid: 129b751e22f0aee40b372a1e7aeff0fc, type: 3}
+      propertyPath: cannotBuildColor.g
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -2908243632039086188, guid: 129b751e22f0aee40b372a1e7aeff0fc, type: 3}
+      propertyPath: cannotBuildColor.r
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 5961186678239745862, guid: 129b751e22f0aee40b372a1e7aeff0fc, type: 3}
       propertyPath: m_RootOrder
       value: 6
@@ -4733,6 +5013,7 @@ GameObject:
   - component: {fileID: 1231334220}
   - component: {fileID: 1231334219}
   - component: {fileID: 1231334218}
+  - component: {fileID: 1231334222}
   m_Layer: 0
   m_Name: Floor
   m_TagString: Floor
@@ -4818,6 +5099,18 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 11
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1231334222
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1231334217}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6510df524374dad4ebc61ada650656d6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &1247591541
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -4825,6 +5118,34 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1318105968}
     m_Modifications:
+    - target: {fileID: -2908243632039086188, guid: 129b751e22f0aee40b372a1e7aeff0fc, type: 3}
+      propertyPath: canBuildColor.b
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: -2908243632039086188, guid: 129b751e22f0aee40b372a1e7aeff0fc, type: 3}
+      propertyPath: canBuildColor.g
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -2908243632039086188, guid: 129b751e22f0aee40b372a1e7aeff0fc, type: 3}
+      propertyPath: canBuildColor.r
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -2908243632039086188, guid: 129b751e22f0aee40b372a1e7aeff0fc, type: 3}
+      propertyPath: canUpgradeColor.g
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: -2908243632039086188, guid: 129b751e22f0aee40b372a1e7aeff0fc, type: 3}
+      propertyPath: cannotBuildColor.b
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -2908243632039086188, guid: 129b751e22f0aee40b372a1e7aeff0fc, type: 3}
+      propertyPath: cannotBuildColor.g
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -2908243632039086188, guid: 129b751e22f0aee40b372a1e7aeff0fc, type: 3}
+      propertyPath: cannotBuildColor.r
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 5961186678239745862, guid: 129b751e22f0aee40b372a1e7aeff0fc, type: 3}
       propertyPath: m_RootOrder
       value: 15
@@ -4891,6 +5212,34 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1318105968}
     m_Modifications:
+    - target: {fileID: -2908243632039086188, guid: 129b751e22f0aee40b372a1e7aeff0fc, type: 3}
+      propertyPath: canBuildColor.b
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: -2908243632039086188, guid: 129b751e22f0aee40b372a1e7aeff0fc, type: 3}
+      propertyPath: canBuildColor.g
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -2908243632039086188, guid: 129b751e22f0aee40b372a1e7aeff0fc, type: 3}
+      propertyPath: canBuildColor.r
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -2908243632039086188, guid: 129b751e22f0aee40b372a1e7aeff0fc, type: 3}
+      propertyPath: canUpgradeColor.g
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: -2908243632039086188, guid: 129b751e22f0aee40b372a1e7aeff0fc, type: 3}
+      propertyPath: cannotBuildColor.b
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -2908243632039086188, guid: 129b751e22f0aee40b372a1e7aeff0fc, type: 3}
+      propertyPath: cannotBuildColor.g
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -2908243632039086188, guid: 129b751e22f0aee40b372a1e7aeff0fc, type: 3}
+      propertyPath: cannotBuildColor.r
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 5961186678239745862, guid: 129b751e22f0aee40b372a1e7aeff0fc, type: 3}
       propertyPath: m_RootOrder
       value: 1
@@ -5671,6 +6020,34 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1318105968}
     m_Modifications:
+    - target: {fileID: -2908243632039086188, guid: 129b751e22f0aee40b372a1e7aeff0fc, type: 3}
+      propertyPath: canBuildColor.b
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: -2908243632039086188, guid: 129b751e22f0aee40b372a1e7aeff0fc, type: 3}
+      propertyPath: canBuildColor.g
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -2908243632039086188, guid: 129b751e22f0aee40b372a1e7aeff0fc, type: 3}
+      propertyPath: canBuildColor.r
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -2908243632039086188, guid: 129b751e22f0aee40b372a1e7aeff0fc, type: 3}
+      propertyPath: canUpgradeColor.g
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: -2908243632039086188, guid: 129b751e22f0aee40b372a1e7aeff0fc, type: 3}
+      propertyPath: cannotBuildColor.b
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -2908243632039086188, guid: 129b751e22f0aee40b372a1e7aeff0fc, type: 3}
+      propertyPath: cannotBuildColor.g
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -2908243632039086188, guid: 129b751e22f0aee40b372a1e7aeff0fc, type: 3}
+      propertyPath: cannotBuildColor.r
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 5961186678239745862, guid: 129b751e22f0aee40b372a1e7aeff0fc, type: 3}
       propertyPath: m_RootOrder
       value: 16
@@ -6584,7 +6961,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
+      - m_Target: {fileID: 1340271736}
         m_TargetAssemblyTypeName: PauseMenu, Assembly-CSharp
         m_MethodName: Menu
         m_Mode: 1
@@ -6927,6 +7304,34 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1318105968}
     m_Modifications:
+    - target: {fileID: -2908243632039086188, guid: 129b751e22f0aee40b372a1e7aeff0fc, type: 3}
+      propertyPath: canBuildColor.b
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: -2908243632039086188, guid: 129b751e22f0aee40b372a1e7aeff0fc, type: 3}
+      propertyPath: canBuildColor.g
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -2908243632039086188, guid: 129b751e22f0aee40b372a1e7aeff0fc, type: 3}
+      propertyPath: canBuildColor.r
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -2908243632039086188, guid: 129b751e22f0aee40b372a1e7aeff0fc, type: 3}
+      propertyPath: canUpgradeColor.g
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: -2908243632039086188, guid: 129b751e22f0aee40b372a1e7aeff0fc, type: 3}
+      propertyPath: cannotBuildColor.b
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -2908243632039086188, guid: 129b751e22f0aee40b372a1e7aeff0fc, type: 3}
+      propertyPath: cannotBuildColor.g
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -2908243632039086188, guid: 129b751e22f0aee40b372a1e7aeff0fc, type: 3}
+      propertyPath: cannotBuildColor.r
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 5961186678239745862, guid: 129b751e22f0aee40b372a1e7aeff0fc, type: 3}
       propertyPath: m_RootOrder
       value: 18
@@ -7232,6 +7637,34 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1318105968}
     m_Modifications:
+    - target: {fileID: -2908243632039086188, guid: 129b751e22f0aee40b372a1e7aeff0fc, type: 3}
+      propertyPath: canBuildColor.b
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: -2908243632039086188, guid: 129b751e22f0aee40b372a1e7aeff0fc, type: 3}
+      propertyPath: canBuildColor.g
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -2908243632039086188, guid: 129b751e22f0aee40b372a1e7aeff0fc, type: 3}
+      propertyPath: canBuildColor.r
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -2908243632039086188, guid: 129b751e22f0aee40b372a1e7aeff0fc, type: 3}
+      propertyPath: canUpgradeColor.g
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: -2908243632039086188, guid: 129b751e22f0aee40b372a1e7aeff0fc, type: 3}
+      propertyPath: cannotBuildColor.b
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -2908243632039086188, guid: 129b751e22f0aee40b372a1e7aeff0fc, type: 3}
+      propertyPath: cannotBuildColor.g
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -2908243632039086188, guid: 129b751e22f0aee40b372a1e7aeff0fc, type: 3}
+      propertyPath: cannotBuildColor.r
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 5961186678239745862, guid: 129b751e22f0aee40b372a1e7aeff0fc, type: 3}
       propertyPath: m_RootOrder
       value: 11
@@ -7391,7 +7824,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
+      - m_Target: {fileID: 1340271736}
         m_TargetAssemblyTypeName: PauseMenu, Assembly-CSharp
         m_MethodName: Toggle
         m_Mode: 1
@@ -7448,6 +7881,34 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1318105968}
     m_Modifications:
+    - target: {fileID: -2908243632039086188, guid: 129b751e22f0aee40b372a1e7aeff0fc, type: 3}
+      propertyPath: canBuildColor.b
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: -2908243632039086188, guid: 129b751e22f0aee40b372a1e7aeff0fc, type: 3}
+      propertyPath: canBuildColor.g
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -2908243632039086188, guid: 129b751e22f0aee40b372a1e7aeff0fc, type: 3}
+      propertyPath: canBuildColor.r
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -2908243632039086188, guid: 129b751e22f0aee40b372a1e7aeff0fc, type: 3}
+      propertyPath: canUpgradeColor.g
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: -2908243632039086188, guid: 129b751e22f0aee40b372a1e7aeff0fc, type: 3}
+      propertyPath: cannotBuildColor.b
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -2908243632039086188, guid: 129b751e22f0aee40b372a1e7aeff0fc, type: 3}
+      propertyPath: cannotBuildColor.g
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -2908243632039086188, guid: 129b751e22f0aee40b372a1e7aeff0fc, type: 3}
+      propertyPath: cannotBuildColor.r
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 5961186678239745862, guid: 129b751e22f0aee40b372a1e7aeff0fc, type: 3}
       propertyPath: m_RootOrder
       value: 4
@@ -7514,6 +7975,34 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1318105968}
     m_Modifications:
+    - target: {fileID: -2908243632039086188, guid: 129b751e22f0aee40b372a1e7aeff0fc, type: 3}
+      propertyPath: canBuildColor.b
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: -2908243632039086188, guid: 129b751e22f0aee40b372a1e7aeff0fc, type: 3}
+      propertyPath: canBuildColor.g
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -2908243632039086188, guid: 129b751e22f0aee40b372a1e7aeff0fc, type: 3}
+      propertyPath: canBuildColor.r
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -2908243632039086188, guid: 129b751e22f0aee40b372a1e7aeff0fc, type: 3}
+      propertyPath: canUpgradeColor.g
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: -2908243632039086188, guid: 129b751e22f0aee40b372a1e7aeff0fc, type: 3}
+      propertyPath: cannotBuildColor.b
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -2908243632039086188, guid: 129b751e22f0aee40b372a1e7aeff0fc, type: 3}
+      propertyPath: cannotBuildColor.g
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -2908243632039086188, guid: 129b751e22f0aee40b372a1e7aeff0fc, type: 3}
+      propertyPath: cannotBuildColor.r
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 5961186678239745862, guid: 129b751e22f0aee40b372a1e7aeff0fc, type: 3}
       propertyPath: m_RootOrder
       value: 17
@@ -8257,6 +8746,34 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1318105968}
     m_Modifications:
+    - target: {fileID: -2908243632039086188, guid: 129b751e22f0aee40b372a1e7aeff0fc, type: 3}
+      propertyPath: canBuildColor.b
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: -2908243632039086188, guid: 129b751e22f0aee40b372a1e7aeff0fc, type: 3}
+      propertyPath: canBuildColor.g
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -2908243632039086188, guid: 129b751e22f0aee40b372a1e7aeff0fc, type: 3}
+      propertyPath: canBuildColor.r
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -2908243632039086188, guid: 129b751e22f0aee40b372a1e7aeff0fc, type: 3}
+      propertyPath: canUpgradeColor.g
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: -2908243632039086188, guid: 129b751e22f0aee40b372a1e7aeff0fc, type: 3}
+      propertyPath: cannotBuildColor.b
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -2908243632039086188, guid: 129b751e22f0aee40b372a1e7aeff0fc, type: 3}
+      propertyPath: cannotBuildColor.g
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -2908243632039086188, guid: 129b751e22f0aee40b372a1e7aeff0fc, type: 3}
+      propertyPath: cannotBuildColor.r
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 5961186678239745862, guid: 129b751e22f0aee40b372a1e7aeff0fc, type: 3}
       propertyPath: m_RootOrder
       value: 3
@@ -8323,6 +8840,34 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1318105968}
     m_Modifications:
+    - target: {fileID: -2908243632039086188, guid: 129b751e22f0aee40b372a1e7aeff0fc, type: 3}
+      propertyPath: canBuildColor.b
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: -2908243632039086188, guid: 129b751e22f0aee40b372a1e7aeff0fc, type: 3}
+      propertyPath: canBuildColor.g
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -2908243632039086188, guid: 129b751e22f0aee40b372a1e7aeff0fc, type: 3}
+      propertyPath: canBuildColor.r
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -2908243632039086188, guid: 129b751e22f0aee40b372a1e7aeff0fc, type: 3}
+      propertyPath: canUpgradeColor.g
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: -2908243632039086188, guid: 129b751e22f0aee40b372a1e7aeff0fc, type: 3}
+      propertyPath: cannotBuildColor.b
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -2908243632039086188, guid: 129b751e22f0aee40b372a1e7aeff0fc, type: 3}
+      propertyPath: cannotBuildColor.g
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -2908243632039086188, guid: 129b751e22f0aee40b372a1e7aeff0fc, type: 3}
+      propertyPath: cannotBuildColor.r
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 5961186678239745862, guid: 129b751e22f0aee40b372a1e7aeff0fc, type: 3}
       propertyPath: m_RootOrder
       value: 14

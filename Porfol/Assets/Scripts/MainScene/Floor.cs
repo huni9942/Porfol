@@ -5,6 +5,7 @@ using UnityEngine;
 public class Floor : MonoBehaviour
 {
     BuildManager buildManager;
+
     void Start()
     {
         buildManager = BuildManager.instance;
@@ -12,6 +13,7 @@ public class Floor : MonoBehaviour
 
     private void OnMouseDown()
     {
-        buildManager.DeselectTurret();
+        // ** Floor 클릭 시 빌드할 터렛 선택 해제
+        buildManager.DeseletTurretToBuild();
     }
 }
