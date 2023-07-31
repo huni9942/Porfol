@@ -82,6 +82,7 @@
     <Compile Include="Assets\Scripts\MainScene\GameOver.cs" />
     <Compile Include="Assets\Scripts\MainScene\Floor.cs" />
     <Compile Include="Assets\Scripts\MainScene\PauseMenu.cs" />
+    <Compile Include="Assets\Scripts\HowToPlay.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Assets\Edit.txt" />

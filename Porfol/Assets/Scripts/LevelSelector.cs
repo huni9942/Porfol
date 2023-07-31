@@ -29,4 +29,9 @@ public class LevelSelector : MonoBehaviour
     {
         fader.FadeTo(levelName);
     }
+
+    public void MainMenu()
+    {
+        fader.FadeTo("MainMenu");
+    }
 }
