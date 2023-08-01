@@ -183,7 +183,7 @@ MonoBehaviour:
       m_Calls: []
   m_FontData:
     m_Font: {fileID: 12800000, guid: e104b624e5a160e43af0a801c0839554, type: 3}
-    m_FontSize: 150
+    m_FontSize: 130
     m_FontStyle: 0
     m_BestFit: 0
     m_MinSize: 1
@@ -194,7 +194,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: QUIT
+  m_Text: "\uB098\uAC00\uAE30"
 --- !u!222 &198778331
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -892,7 +892,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: TURRET DEFENSE
+  m_Text: "\uD130\uB81B \uB514\uD39C\uC2A4"
 --- !u!222 &1116713081
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -1346,7 +1346,7 @@ MonoBehaviour:
       m_Calls: []
   m_FontData:
     m_Font: {fileID: 12800000, guid: e104b624e5a160e43af0a801c0839554, type: 3}
-    m_FontSize: 150
+    m_FontSize: 130
     m_FontStyle: 0
     m_BestFit: 0
     m_MinSize: 1
@@ -1357,7 +1357,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: PLAY
+  m_Text: "\uC2DC\uC791"
 --- !u!222 &1864736396
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -1576,7 +1576,7 @@ MonoBehaviour:
       m_Calls: []
   m_FontData:
     m_Font: {fileID: 12800000, guid: e104b624e5a160e43af0a801c0839554, type: 3}
-    m_FontSize: 85
+    m_FontSize: 130
     m_FontStyle: 0
     m_BestFit: 0
     m_MinSize: 1
@@ -1587,7 +1587,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: HOW TO PLAY
+  m_Text: "\uAC8C\uC784 \uBC29\uBC95"
 --- !u!222 &1999113500
 CanvasRenderer:
   m_ObjectHideFlags: 0

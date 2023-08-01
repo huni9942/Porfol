@@ -10,3 +10,4 @@
 8. Enemy가 nextWaypoint 방향을 볼 수 있도록 prefab 수정(HealthBar의 위치는 변동X), EnemyMovement에 rotation 관련 스크립트 추가
 9. 마우스 hover, 터렛 존재, Money 상황, 업그레이드 여부 등에 따른 Spawner의 색상 변경 조건 추가
 10. HowToPlay 씬 추가 및 LevelSelect 씬에도 MainMenu로 돌아가는 버튼 추가
+11. Money 부족 및 터렛 미선택 시 경고 문구 UI 추가

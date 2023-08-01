@@ -30,6 +30,9 @@ public class TowerSpawner : MonoBehaviour
     // ** 초기 색상
     public Color startColor;
 
+    public GameObject notEnoughMoneyText;
+    public GameObject pleasePickTurretText;
+
     // ** 빌드 매니저 스크립트
     BuildManager buildManager;
     private void Start()
@@ -67,8 +70,10 @@ public class TowerSpawner : MonoBehaviour
 
         // ** 빌드할 터렛이 존재하지 않을 때 반환한다
         if (!buildManager.CanBuild)
+        {
+            pleasePickTurret();
             return;
-
+        }
         // ** 그 외의 경우에 터렛을 빌드한다
         BuildTurret(buildManager.GetTurretToBuild());
     }
@@ -77,8 +82,10 @@ public class TowerSpawner : MonoBehaviour
     {
         // ** 보유한 돈이 터렛 가격보다 적을 경우 반환한다
         if (PlayerStats.Money < blueprint.cost)
+        {
+            notEnoughMoeny();
             return;
-
+        }
         // ** 보유한 돈에서 터렛 가격만큼 차감한다
         PlayerStats.Money -= blueprint.cost;
 
@@ -93,14 +100,17 @@ public class TowerSpawner : MonoBehaviour
         GameObject effect = (GameObject)Instantiate(buildManager.buildEffect, GetBuildPosition(), Quaternion.identity);
         // ** 이펙트를 소멸시킨다
         Destroy(effect, 5.0f);
+        clearText();
     }
 
     public void UpgradeTurret()
     {
         // ** 보유한 돈이 터렛 가격보다 적을 경우 반환한다
         if (PlayerStats.Money < turretBlueprint.upgradeCost)
+        {
+            notEnoughMoeny();
             return;
-
+        }
         // ** 보유한 돈에서 터렛 가격만큼 차감한다
         PlayerStats.Money -= turretBlueprint.upgradeCost;
 
@@ -118,6 +128,8 @@ public class TowerSpawner : MonoBehaviour
 
         // ** 업그레이드 상태를 참으로 한다
         isUpgraded = true;
+
+        clearText();
     }
 
     // ** 터렛 판매
@@ -133,6 +145,7 @@ public class TowerSpawner : MonoBehaviour
         Destroy(turret);
         turretBlueprint = null;
         isUpgraded = false;
+        clearText();
     }
 
     // ** 마우스를 감지했을 때 색상 변경
@@ -158,13 +171,42 @@ public class TowerSpawner : MonoBehaviour
         }
 
         // ** 터렛이 존재하고 업그레이드된 상태가 아니며 돈이 충분할 경우
-        if (turret !=null && !isUpgraded && PlayerStats.Money > turretBlueprint.upgradeCost)
+        if (turret != null && !isUpgraded && PlayerStats.Money > turretBlueprint.upgradeCost)
             rend.material.color = canUpgradeColor;
+        else if (turret != null && !isUpgraded && PlayerStats.Money < turretBlueprint.upgradeCost)
+            rend.material.color = cannotBuildColor;
     }
 
     // ** 마우스가 벗어났을 때 색상 초기화
     private void OnMouseExit()
     {
-            rend.material.color = startColor;
+            resetColor();
+    }
+
+    public void resetColor()
+    {
+        rend.material.color = startColor;
+    }
+
+    public void notEnoughMoeny()
+    {
+        if (pleasePickTurretText.activeSelf == true)
+            pleasePickTurretText.SetActive(false);
+
+        notEnoughMoneyText.SetActive(true);
+    }
+
+    public void pleasePickTurret()
+    {
+        if (notEnoughMoneyText.activeSelf == true)
+            notEnoughMoneyText.SetActive(false);
+
+        pleasePickTurretText.SetActive(true);
+    }
+
+    public void clearText()
+    {
+         notEnoughMoneyText.SetActive(false);
+         pleasePickTurretText.SetActive(false);
     }
 }
