@@ -1,6 +1,6 @@
-참고 영상 : https://www.youtube.com/@Brackeys
+참고 영상 : https://www.youtube.com/@Brackeys 채널의 'How to make a Tower Defense Game'
 영상 외 추가 기능 및 수정점
-1. 디자인 변경 및 타워 추가(BombTurret)
+1. 전체 디자인 변경 및 타워 추가(BombTurret)
 2. 업그레이드된 터렛 판매 후 동일한 Spawner에 터렛을 다시 build 했을 때, 업그레이드가 불가능한 오류 수정(*업그레이드 상태 초기화)
 3. 최종 라운드 클리어 시 레벨 선택 화면으로 이동
 4. 터렛 UI가 활성화 상태일 때, Floor 클릭 시 UI 비활성화
