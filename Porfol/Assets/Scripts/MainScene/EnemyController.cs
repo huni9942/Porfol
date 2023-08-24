@@ -56,7 +56,7 @@ public class EnemyController : MonoBehaviour
     }
 
     // ** Enemy »ç¸Á ½Ã
-    void Die()
+    public void Die()
     {
         isDead = true;
 

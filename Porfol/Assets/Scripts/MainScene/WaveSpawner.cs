@@ -14,9 +14,9 @@ public class WaveSpawner : MonoBehaviour
     public Transform spawnPoint;
 
     // ** Wave 사이 시간 간격
-    public float timeBetweenWaves = 1.0f;
-    // ** 다음 Wave까지 걸리는 시간
-    private float countdown = 1.0f;
+    public float timeBetweenWaves = 5.0f;
+    // ** 첫 Wave까지 걸리는 시간
+    public float countdown = 1.0f;
 
     // ** countdown을 표기하는 텍스트
     public Text waveCountdownText;

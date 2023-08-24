@@ -42,6 +42,9 @@ public class PauseMenu : MonoBehaviour
     public void Retry()
     {
         Toggle();
+        EnemyController[] Enemy = FindObjectsOfType<EnemyController>();
+        foreach (EnemyController enemy in Enemy)
+            enemy.Die();
         // ** 현재 활성화 중인 씬을 다시 불러온다
         sceneFader.FadeTo(SceneManager.GetActiveScene().name);
     }

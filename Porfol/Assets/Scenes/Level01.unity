@@ -4967,7 +4967,8 @@ MonoBehaviour:
     count: 5
     rate: 2
   spawnPoint: {fileID: 346524821}
-  timeBetweenWaves: 1
+  timeBetweenWaves: 5
+  countdown: 1
   waveCountdownText: {fileID: 1693992695}
   gameManager: {fileID: 1103232908}
 --- !u!114 &1103232906
@@ -5000,7 +5001,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   startMoney: 1000
-  startLives: 5
+  startLives: 1
 --- !u!114 &1103232908
 MonoBehaviour:
   m_ObjectHideFlags: 0
