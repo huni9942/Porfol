@@ -736,6 +736,7 @@ MonoBehaviour:
   levelButtons:
   - {fileID: 1220895593}
   - {fileID: 900759702}
+  - {fileID: 1542232002}
 --- !u!1 &705507993
 GameObject:
   m_ObjectHideFlags: 0
@@ -1450,6 +1451,17 @@ RectTransform:
   m_CorrespondingSourceObject: {fileID: 5130095145700851324, guid: 52ad1fd1248a2e944b78b5a1a11c359f, type: 3}
   m_PrefabInstance: {fileID: 1457923904}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &1542232002 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 5130095145700851315, guid: 52ad1fd1248a2e944b78b5a1a11c359f, type: 3}
+  m_PrefabInstance: {fileID: 1457923904}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4e29b1a8efbd4b44bb3f3716e73f07ff, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &1626302250
 PrefabInstance:
   m_ObjectHideFlags: 0

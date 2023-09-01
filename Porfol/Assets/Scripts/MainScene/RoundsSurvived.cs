@@ -16,18 +16,9 @@ public class RoundsSurvived : MonoBehaviour
 
     IEnumerator AnimateText()
     {
-        roundsText.text = "0";
-        int round = 0;
+        roundsText.text = PlayerStats.Rounds.ToString();
 
         yield return new WaitForSeconds(0.07f);
-
-        while (round < PlayerStats.Rounds)
-        {
-            round++;
-            roundsText.text = round.ToString();
-
-            yield return new WaitForSeconds(0.05f);
-        }
     }
 
 }
